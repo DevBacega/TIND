@@ -89,6 +89,7 @@
             this.gridCurso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridCurso.Size = new System.Drawing.Size(1039, 242);
             this.gridCurso.TabIndex = 75;
+            this.gridCurso.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridCurso_CellClick);
             // 
             // lblResultado
             // 
@@ -182,6 +183,7 @@
             this.btnDeletar.Size = new System.Drawing.Size(147, 55);
             this.btnDeletar.TabIndex = 71;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // txtAbrev
             // 

@@ -81,5 +81,17 @@ namespace tind4s
         {
             this.Close();
         }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            frmQuestao frm = new frmQuestao();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frm);
+            frm.Dock = DockStyle.Left;
+            frm.Show();
+            lblTitulo.Visible = true;
+            lblTitulo.Text = "Controle de Materia";
+        }
     }
 }

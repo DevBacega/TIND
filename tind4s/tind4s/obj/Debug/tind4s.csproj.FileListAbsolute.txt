@@ -96,3 +96,6 @@ C:\Users\zendr\Desktop\TIND-master\TIND-master\tind4s\tind4s\obj\Debug\tind4s.cs
 C:\Users\zendr\Desktop\TIND-master\TIND-master\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 C:\Users\zendr\Desktop\TIND-master\TIND-master\tind4s\tind4s\obj\Debug\tind4s.exe
 C:\Users\zendr\Desktop\TIND-master\TIND-master\tind4s\tind4s\obj\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
