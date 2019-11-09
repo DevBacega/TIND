@@ -1,0 +1,58 @@
+c:\users\ifsp\documents\visual studio 2012\Projects\tind4s\tind4s\bin\Debug\tind4s.exe.config
+D:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojResolveAssemblyReference.cache
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.Cache
+D:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+D:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+D:\TIND4S\tind4s\tind4s\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+H:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+H:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+H:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojResolveAssemblyReference.cache
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.Cache
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLoginn.resources
+H:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLoginn.resources
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+F:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+F:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+F:\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojResolveAssemblyReference.cache
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLoginn.resources
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+F:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.Cache
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLoginn.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuarioo.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.Cache
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojResolveAssemblyReference.cache
+D:\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojAssemblyReference.cache
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLoginn.resources
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.cache
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CoreCompileInputs.cache
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
