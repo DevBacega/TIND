@@ -28,6 +28,7 @@ namespace tind4s
         {
             txtCurso.Text = string.Empty;
             txtAbrev.Text = string.Empty;
+            lblId_Curso.Text = string.Empty;
         }
 
         private void CarregaGrid()
@@ -36,6 +37,7 @@ namespace tind4s
             mObjCurso.PreencheGrid();
             gridCurso.DataSource = mObjCurso.DsCurso;
             gridCurso.DataMember = mObjCurso.DsCurso.Tables[0].TableName;
+            gridCurso.Columns[0].Visible = false;
             gridCurso.Refresh();
         }
 
@@ -74,7 +76,7 @@ namespace tind4s
                 lblResultado.Text = "Curso Atualuzado com Sucesso!";
                 CarregaGrid();
             }
-            lblId_Curso.Text = string.Empty;
+            limpar();
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -112,7 +114,9 @@ namespace tind4s
             txtAbrev.Refresh();
         }
 
-
-
+        private void Redimensionar(object sender, EventArgs e)
+        {
+            this.Size = this.Parent.Size;
+        }
     }
 }

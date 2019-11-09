@@ -50,7 +50,7 @@ namespace tind4s
             cmd.Parameters.AddWithValue("@pId_Curso", mId_Curso);
             cmd.Parameters.AddWithValue("@pNm_Materia",mNm_Materia);
             cmd.Parameters.AddWithValue("@pAbrev_Nm_Materia",mSg_Materia);
-            cmd.BeginExecuteReader(CommandBehavior.SingleRow);
+            cmd.ExecuteReader(CommandBehavior.SingleRow);
             mObjconexao.desconectar();
         }
 
@@ -65,7 +65,7 @@ namespace tind4s
             cmd.Parameters.AddWithValue("@pId_Materia", mId_Materia);
             cmd.Parameters.AddWithValue("@pNm_Materia", mNm_Materia);
             cmd.Parameters.AddWithValue("@pAbrev_Nm_Materia", mSg_Materia);
-            cmd.BeginExecuteReader(CommandBehavior.SingleRow);
+            cmd.ExecuteReader(CommandBehavior.SingleRow);
             mObjconexao.desconectar();
         }
 

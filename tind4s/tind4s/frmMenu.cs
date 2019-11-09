@@ -12,10 +12,12 @@ namespace tind4s
 {
     public partial class frmMenu : Form
     {
+
         public frmMenu()
         {
             InitializeComponent();
             lblTitulo.Visible = false;
+
         }
         frmUsuario frmUser = new frmUsuario();
 
@@ -39,6 +41,7 @@ namespace tind4s
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
+            EncerrarForm();
             frmUser.TopLevel = false;
             frmUser.AutoScroll = true;
             this.MenuConteudo.Controls.Add(frmUser);
@@ -50,11 +53,20 @@ namespace tind4s
 
         private void btnProva_Click(object sender, EventArgs e)
         {
-
+            EncerrarForm();
+            frmProvaCadastro frm = new frmProvaCadastro();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frm);
+            frm.Dock = DockStyle.Left;
+            frm.Show();
+            lblTitulo.Visible = true;
+            lblTitulo.Text = "Controle de Prova";
         }
 
         private void btnCurso_Click(object sender, EventArgs e)
         {
+            EncerrarForm();
             frmCurso frm = new frmCurso();
             frm.TopLevel = false;
             frm.AutoScroll = true;
@@ -67,6 +79,7 @@ namespace tind4s
 
         private void BunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            EncerrarForm();
             frmMateria frm = new frmMateria();
             frm.TopLevel = false;
             frm.AutoScroll = true;
@@ -79,19 +92,44 @@ namespace tind4s
 
         private void BtnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
-        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            frmQuestao frm = new frmQuestao();
+            if(this.WindowState != FormWindowState.Maximized)
+            { 
+                this.WindowState = FormWindowState.Maximized;
+                
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+
+        }
+
+        private void EncerrarForm()
+        {
+            this.MenuConteudo.Controls.Clear();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void BunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            EncerrarForm();
+            frmViewQuestao frm = new frmViewQuestao();
             frm.TopLevel = false;
             frm.AutoScroll = true;
             this.MenuConteudo.Controls.Add(frm);
             frm.Dock = DockStyle.Left;
             frm.Show();
             lblTitulo.Visible = true;
-            lblTitulo.Text = "Controle de Materia";
+            lblTitulo.Text = "Controle de Questões";
         }
     }
 }

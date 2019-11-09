@@ -156,5 +156,14 @@ namespace tind4s
             gridUsuario.Refresh();
         }
 
+        private void GridUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Redimensionar(object sender, EventArgs e)
+        {
+            this.Size = this.Parent.Size;
+        }
     }
 }

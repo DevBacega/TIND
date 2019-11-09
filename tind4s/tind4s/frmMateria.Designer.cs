@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMateria));
             this.gridMateria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.lblId_Prontuario = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtSigla = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtMateria = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -44,7 +43,7 @@
             this.btnNovo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblIdMateria = new System.Windows.Forms.Label();
-            this.dropCurso = new Bunifu.Framework.UI.BunifuDropdown();
+            this.cbCurso = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridMateria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,29 +51,30 @@
             // 
             this.gridMateria.AllowUserToAddRows = false;
             this.gridMateria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.gridMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.gridMateria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridMateria.BackgroundColor = System.Drawing.Color.White;
+            this.gridMateria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMateria.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridMateria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridMateria.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMateria.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMateria.DefaultCellStyle = dataGridViewCellStyle12;
             this.gridMateria.DoubleBuffered = true;
             this.gridMateria.EnableHeadersVisualStyles = false;
             this.gridMateria.GridColor = System.Drawing.Color.White;
@@ -93,14 +93,6 @@
             this.gridMateria.Size = new System.Drawing.Size(774, 197);
             this.gridMateria.TabIndex = 76;
             this.gridMateria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelecionaMateria);
-            // 
-            // lblId_Prontuario
-            // 
-            this.lblId_Prontuario.AutoSize = true;
-            this.lblId_Prontuario.Location = new System.Drawing.Point(42, 240);
-            this.lblId_Prontuario.Name = "lblId_Prontuario";
-            this.lblId_Prontuario.Size = new System.Drawing.Size(0, 13);
-            this.lblId_Prontuario.TabIndex = 74;
             // 
             // lblResultado
             // 
@@ -233,6 +225,7 @@
             this.btnNovo.Size = new System.Drawing.Size(110, 45);
             this.btnNovo.TabIndex = 70;
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
             // 
             // btnDeletar
             // 
@@ -260,45 +253,37 @@
             this.btnDeletar.Size = new System.Drawing.Size(110, 42);
             this.btnDeletar.TabIndex = 71;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // lblIdMateria
             // 
             this.lblIdMateria.AutoSize = true;
             this.lblIdMateria.Location = new System.Drawing.Point(12, 210);
             this.lblIdMateria.Name = "lblIdMateria";
-            this.lblIdMateria.Size = new System.Drawing.Size(35, 13);
+            this.lblIdMateria.Size = new System.Drawing.Size(0, 13);
             this.lblIdMateria.TabIndex = 77;
-            this.lblIdMateria.Text = "label1";
             this.lblIdMateria.Visible = false;
             // 
-            // dropCurso
+            // cbCurso
             // 
-            this.dropCurso.BackColor = System.Drawing.Color.Transparent;
-            this.dropCurso.BorderRadius = 3;
-            this.dropCurso.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dropCurso.DisabledColor = System.Drawing.Color.Gray;
-            this.dropCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.dropCurso.ForeColor = System.Drawing.Color.Black;
-            this.dropCurso.Items = new string[0];
-            this.dropCurso.Location = new System.Drawing.Point(398, 229);
-            this.dropCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dropCurso.Name = "dropCurso";
-            this.dropCurso.NomalColor = System.Drawing.Color.White;
-            this.dropCurso.onHoverColor = System.Drawing.Color.WhiteSmoke;
-            this.dropCurso.selectedIndex = -1;
-            this.dropCurso.Size = new System.Drawing.Size(224, 32);
-            this.dropCurso.TabIndex = 78;
+            this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbCurso.FormattingEnabled = true;
+            this.cbCurso.Location = new System.Drawing.Point(388, 232);
+            this.cbCurso.Margin = new System.Windows.Forms.Padding(8);
+            this.cbCurso.Name = "cbCurso";
+            this.cbCurso.Size = new System.Drawing.Size(224, 28);
+            this.cbCurso.TabIndex = 79;
             // 
             // frmMateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(797, 414);
-            this.Controls.Add(this.dropCurso);
+            this.Controls.Add(this.cbCurso);
             this.Controls.Add(this.lblIdMateria);
             this.Controls.Add(this.gridMateria);
-            this.Controls.Add(this.lblId_Prontuario);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
@@ -310,8 +295,10 @@
             this.Controls.Add(this.lblMateria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMateria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMateria";
             this.Load += new System.EventHandler(this.FrmMateria_Load);
+            this.Resize += new System.EventHandler(this.Redimensionar);
             ((System.ComponentModel.ISupportInitialize)(this.gridMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -321,7 +308,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridMateria;
-        private System.Windows.Forms.Label lblId_Prontuario;
         private System.Windows.Forms.Label lblResultado;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSalvar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNovo;
@@ -332,6 +318,6 @@
         private System.Windows.Forms.Label lblCurso;
         private System.Windows.Forms.Label lblMateria;
         private System.Windows.Forms.Label lblIdMateria;
-        private Bunifu.Framework.UI.BunifuDropdown dropCurso;
+        private System.Windows.Forms.ComboBox cbCurso;
     }
 }
