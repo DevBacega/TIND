@@ -21,7 +21,7 @@ namespace tind4s
         frmUsuario frmUser = new frmUsuario();
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            if(pnlMenu.Width == 52)
+            if (pnlMenu.Width == 52)
             {
                 pnlMenu.Width = 255;
                 MenuConteudo.Width = 1064;
@@ -54,6 +54,7 @@ namespace tind4s
 
         }
 
+
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -69,6 +70,21 @@ namespace tind4s
             frmMat.Show();
             lblTitulo.Visible = true;
             lblTitulo.Text = "Controle de Usuários";
+
+
+        }
+
+        private void BtnCurso_Click(object sender, EventArgs e)
+        {
+            //frmCurso frm = new frmCurso();
+            //frm.TopLevel = false;
+            //frm.AutoScroll = true;
+            //this.MenuConteudo.Controls.Add(frm);
+            //frm.Dock = DockStyle.Left;
+            //frm.Show();
+            //lblTitulo.Visible = true;
+            //lblTitulo.Text = "Controle de Curso";
+
         }
     }
 }
