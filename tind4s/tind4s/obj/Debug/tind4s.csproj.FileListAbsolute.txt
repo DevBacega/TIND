@@ -69,3 +69,4 @@ D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources

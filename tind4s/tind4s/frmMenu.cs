@@ -17,8 +17,8 @@ namespace tind4s
             InitializeComponent();
             lblTitulo.Visible = false;
         }
-        frmUsuario frmUser = new frmUsuario();
 
+        frmUsuario frmUser = new frmUsuario();
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
             if(pnlMenu.Width == 52)
@@ -39,6 +39,7 @@ namespace tind4s
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
+            //frmUsuario frmUser = new frmUsuario();
             frmUser.TopLevel = false;
             frmUser.AutoScroll = true;
             this.MenuConteudo.Controls.Add(frmUser);
@@ -51,6 +52,23 @@ namespace tind4s
         private void btnProva_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            frmMateria frmMat = new frmMateria();
+            frmMat.TopLevel = false;
+            frmMat.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frmMat);
+            frmMat.Dock = DockStyle.Left;
+            frmMat.Show();
+            lblTitulo.Visible = true;
+            lblTitulo.Text = "Controle de Usuários";
         }
     }
 }

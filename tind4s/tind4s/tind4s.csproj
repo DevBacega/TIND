@@ -51,18 +51,19 @@
   <ItemGroup>
     <Compile Include="clsConexao.cs" />
     <Compile Include="ClsManutencao.cs" />
+    <Compile Include="ClsMateria.cs" />
     <Compile Include="clsProfessor.cs" />
-    <Compile Include="frmCurso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCurso.Designer.cs">
-      <DependentUpon>frmCurso.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMateria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMateria.Designer.cs">
+      <DependentUpon>frmMateria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
@@ -90,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMateria.resx">
+      <DependentUpon>frmMateria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
