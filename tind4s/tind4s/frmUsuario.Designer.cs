@@ -36,7 +36,6 @@
             this.btnAtualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCadastrar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEditar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtSenha = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtProfessor = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtUsuario = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -75,7 +74,7 @@
             this.btnAtualizar.IdleFillColor = System.Drawing.Color.White;
             this.btnAtualizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnAtualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnAtualizar.Location = new System.Drawing.Point(675, 224);
+            this.btnAtualizar.Location = new System.Drawing.Point(673, 275);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(110, 45);
@@ -94,7 +93,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.White;
             this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
             this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCadastrar.ButtonText = "Cadastrar";
+            this.btnCadastrar.ButtonText = "Novo";
             this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
@@ -103,7 +102,7 @@
             this.btnCadastrar.IdleFillColor = System.Drawing.Color.White;
             this.btnCadastrar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnCadastrar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(675, 269);
+            this.btnCadastrar.Location = new System.Drawing.Point(675, 317);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(5);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(110, 45);
@@ -138,34 +137,6 @@
             this.btnDeletar.TabIndex = 39;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.ActiveBorderThickness = 1;
-            this.btnEditar.ActiveCornerRadius = 20;
-            this.btnEditar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEditar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.BackColor = System.Drawing.Color.White;
-            this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.ButtonText = "Editar";
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.IdleBorderThickness = 1;
-            this.btnEditar.IdleCornerRadius = 20;
-            this.btnEditar.IdleFillColor = System.Drawing.Color.White;
-            this.btnEditar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.Location = new System.Drawing.Point(675, 312);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(110, 45);
-            this.btnEditar.TabIndex = 40;
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // txtSenha
             // 
@@ -236,7 +207,7 @@
             this.lblProfessor.BackColor = System.Drawing.Color.Transparent;
             this.lblProfessor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblProfessor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfessor.Location = new System.Drawing.Point(38, 124);
+            this.lblProfessor.Location = new System.Drawing.Point(30, 124);
             this.lblProfessor.Name = "lblProfessor";
             this.lblProfessor.Size = new System.Drawing.Size(157, 24);
             this.lblProfessor.TabIndex = 32;
@@ -278,9 +249,8 @@
             this.lblId_Prontuario.AutoSize = true;
             this.lblId_Prontuario.Location = new System.Drawing.Point(30, 32);
             this.lblId_Prontuario.Name = "lblId_Prontuario";
-            this.lblId_Prontuario.Size = new System.Drawing.Size(35, 13);
+            this.lblId_Prontuario.Size = new System.Drawing.Size(0, 13);
             this.lblId_Prontuario.TabIndex = 44;
-            this.lblId_Prontuario.Text = "label1";
             // 
             // lblInativo
             // 
@@ -352,7 +322,6 @@
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnDeletar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtProfessor);
             this.Controls.Add(this.txtUsuario);
@@ -376,7 +345,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnAtualizar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCadastrar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDeletar;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnEditar;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtSenha;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtProfessor;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtUsuario;

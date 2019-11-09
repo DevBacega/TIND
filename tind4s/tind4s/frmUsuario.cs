@@ -19,136 +19,118 @@ namespace tind4s
             gridUsuario.AllowUserToDeleteRows = false;
             gridUsuario.ReadOnly = true;
             lblId_Prontuario.Visible = false;
-            txtProfessor.Enabled = false;
-            txtSenha.Enabled = false;
-            txtUsuario.Enabled = false;
             lblInativo.Visible = false;
+            lblResultado.Visible = false;
         }
-        int aux;
-
-        ClsProfessor mObjprofessor = new ClsProfessor();
+        int aux = 1;
 
 
-        private void loadGrid()
+
+
+        //private void loadGrid()
+        //{
+        //    ClsProfessor mObjprofessor = new ClsProfessor();
+        //    mObjprofessor.PreencheGrid();
+        //    gridUsuario.DataSource = mObjprofessor.DSUsuario.Tables[0];
+        //    gridUsuario.ReadOnly = true;
+        //        //gridUsuario.Columns[0].HeaderText = "Prontuario";
+        //        //gridUsuario.Columns[1].HeaderText = "Nome";
+
+        //        gridUsuario.AutoResizeColumns();
+
+        //        gridUsuario.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+        //}
+
+        public void limpar()
         {
-                CarregaGrid();
-                gridUsuario.DataSource = mObjprofessor.DSUsuario.Tables[0];
-                gridUsuario.ReadOnly = true;
-                //gridUsuario.Columns[0].HeaderText = "Prontuario";
-                //gridUsuario.Columns[1].HeaderText = "Nome";
-
-                gridUsuario.AutoResizeColumns();
-
-                gridUsuario.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-        }
-
-        private void frmUsuario_Load(object sender, EventArgs e)
-        {
-            loadGrid();
-        }
-
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-            aux = 1;
-            txtProfessor.Enabled = true;
-            txtSenha.Enabled = true;
-            txtUsuario.Enabled = true;
-            gridUsuario.Enabled = false;
             txtProfessor.Text = string.Empty;
             txtSenha.Text = string.Empty;
             txtUsuario.Text = string.Empty;
         }
 
+
+        private void frmUsuario_Load(object sender, EventArgs e)
+        {
+            CarregaGrid();
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            aux = 1;
+            limpar();
+        }
+
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
+            ClsProfessor mObjProfessor = new ClsProfessor()
+            {
+                Nm_Usuario = txtProfessor.Text,
+                Ds_Senha = txtSenha.Text,
+                Ds_Usuario = txtUsuario.Text,
+                Id_Prontuario = Convert.ToInt32(0 + lblId_Prontuario.Text),
+                St_Usuario = 1
+            };
+
             if (aux == 1)
             {
-                mObjprofessor.Nm_Usuario = txtProfessor.Text;
-                mObjprofessor.Ds_Senha = txtSenha.Text;
-                mObjprofessor.Ds_Usuario = txtUsuario.Text;
-
-                if (mObjprofessor.InserirProfessor() == "true")
+                try
                 {
+                    mObjProfessor.Inserir();
                     lblResultado.Text = "Cadastro feito com Sucesso";
-                    gridUsuario.Enabled = true;
-                    this.tB_UsuarioTableAdapter.Fill(this.tind4sDataSet1.TB_Usuario);
+                    CarregaGrid();
                 }
-                else
+                catch (Exception ex)
                 {
                     lblResultado.Text = "Erro ao cadastrar";
-                    MessageBox.Show("Erro: " + mObjprofessor.InserirProfessor());
+                    MessageBox.Show("Erro: " + ex.ToString() );
                 }
             }
             else if (aux == 2)
             {
-                mObjprofessor.Nm_Usuario = txtProfessor.Text;
-                mObjprofessor.Ds_Senha = txtSenha.Text;
-                mObjprofessor.Ds_Usuario = txtUsuario.Text;
-                mObjprofessor.Id_Prontuario = Convert.ToInt32(lblId_Prontuario.Text);
-                mObjprofessor.St_Usuario = 1;
-                if (mObjprofessor.UpdateProfessor() == "true")
+                try
                 {
+                    mObjProfessor.Atualizar();
                     lblResultado.Text = "Usuario Atualizado";
-                    gridUsuario.Enabled = true;
-                    this.tB_UsuarioTableAdapter.Fill(this.tind4sDataSet1.TB_Usuario);
+                    CarregaGrid();
                 }
-                else
+                catch (Exception ex)
                 {
                     lblResultado.Text = "Erro ao Atualizar";
-                    MessageBox.Show("Erro: " + mObjprofessor.UpdateProfessor());
+                    MessageBox.Show("Erro: " + ex.ToString());
                 }
             }
             lblId_Prontuario.Text = string.Empty;
-            txtProfessor.Enabled = false;
-            txtSenha.Enabled = false;
-            txtUsuario.Enabled = false;
-        }
-
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            aux = 2;
-            txtProfessor.Enabled = true;
-            txtSenha.Enabled = true;
-            txtUsuario.Enabled = true;
-            gridUsuario.Enabled = false;
-
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
+            ClsProfessor mObjprofessor = new ClsProfessor()
+            {
+                Id_Prontuario = Convert.ToInt32(lblId_Prontuario.Text)
+            };
             DialogResult resultado = MessageBox.Show("Você tem certeza que deseja desativar esse Usuario?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
             if (resultado == DialogResult.Yes)
             {
-                mObjprofessor.Nm_Usuario = txtProfessor.Text;
-                mObjprofessor.Ds_Senha = txtSenha.Text;
-                mObjprofessor.Ds_Usuario = txtUsuario.Text;
-                mObjprofessor.Id_Prontuario = Convert.ToInt32(lblId_Prontuario.Text);
-                mObjprofessor.St_Usuario = 0;
-
-                if (mObjprofessor.AfastarProfessor() == "true")
+                try
                 {
+                    mObjprofessor.Desativa();
                     lblResultado.Text = "Usuário Inativo com Sucesso";
-                    this.tB_UsuarioTableAdapter.Fill(this.tind4sDataSet1.TB_Usuario);
+                    CarregaGrid();
+                    limpar();
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Erro: " + mObjprofessor.UpdateProfessor());
-                    this.tB_UsuarioTableAdapter.Fill(this.tind4sDataSet1.TB_Usuario);
-                    
+                    MessageBox.Show("Erro: " + ex.ToString());
+                    CarregaGrid();
+
                 }
             }
         }
 
-        private void btnVoltar_Click(object sender, EventArgs e)
-        {
-            frmLoginn frm = new frmLoginn();
-            this.Hide();
-            frm.ShowDialog();
-        }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            aux = 2;
             lblInativo.Visible = false;
             lblId_Prontuario.Text = gridUsuario.CurrentRow.Cells[0].Value.ToString();
             txtUsuario.Text = gridUsuario.CurrentRow.Cells[1].Value.ToString();
@@ -167,9 +149,11 @@ namespace tind4s
 
         private void CarregaGrid()
         {
-            mObjprofessor.Grid();
-            gridUsuario.DataSource = mObjprofessor.DSUsuario;
-            gridUsuario.DataMember = mObjprofessor.DSUsuario.Tables[0].TableName;
+            ClsProfessor mObjProfessor = new ClsProfessor();
+            mObjProfessor.PreencheGrid();
+            gridUsuario.DataSource = mObjProfessor.DSUsuario;
+            gridUsuario.DataMember = mObjProfessor.DSUsuario.Tables[0].TableName;
+            gridUsuario.Refresh();
         }
 
     }

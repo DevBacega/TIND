@@ -56,3 +56,16 @@ C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CoreCompileI
 C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
 C:\Users\zendr\Desktop\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojAssemblyReference.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CoreCompileInputs.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources

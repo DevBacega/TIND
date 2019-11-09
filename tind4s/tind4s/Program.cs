@@ -16,7 +16,7 @@ namespace tind4s
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLoginn());
+            Application.Run(new frmLogin());
         }
     }
 }

@@ -58,7 +58,7 @@ begin
 	CREATE TABLE TB_Prova (
 		Id_Prova Int PRIMARY KEY identity(1,1),
 		Nm_Prova Varchar(150),
-		St_Prova date,
+		St_Prova int,
 		Id_Prontuario Int,
 		--Id_Turma Int,
 		--FOREIGN KEY(Id_Turma) REFERENCES TB_Turma (Id_Turma),

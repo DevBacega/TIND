@@ -48,11 +48,9 @@ namespace tind4s
             set { mSt_Usuario = value; }//recebe um valor para variavel
         }
 
-        public override string InserirProfessor()
+        public override void Inserir()
         {
             ClsConexao conexao = new ClsConexao();
-            try
-            {
                 conexao.conectar();
                 SqlCommand cmd = new SqlCommand("sp_Ins_Usuario", conexao.conexao);
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -61,101 +59,48 @@ namespace tind4s
                 cmd.Parameters.AddWithValue("@pDs_Senha", mDs_Senha);
                 cmd.Parameters.AddWithValue("@pSt_Usuario", 1);
                 cmd.ExecuteReader(CommandBehavior.SingleRow);
-                return ("true");
-            }
-            catch (Exception ex)
-            {
-                return ex.ToString();
-            }
-            finally
-            {
                 conexao.desconectar();
-            }
         }
-        public override string UpdateProfessor() 
+        public override void Atualizar() 
         {
             ClsConexao conexao = new ClsConexao();
-            try
-            {
-                conexao.conectar();
-                SqlCommand cmd = new SqlCommand("sp_Upd_Usuario", conexao.conexao);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pNm_Usuario", mNm_Usuario);
-                cmd.Parameters.AddWithValue("@pDs_Usuario", mDs_Usuario);
-                cmd.Parameters.AddWithValue("@pDs_Senha", mDs_Senha);
-                cmd.Parameters.AddWithValue("@pSt_Usuario", mSt_Usuario);
-                cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
-                cmd.ExecuteReader(CommandBehavior.SingleRow);
-                return ("true");
-            }
-            catch (Exception ex)
-            {
-                return ex.ToString();
-            }
-            finally
-            {
-                conexao.desconectar();
-            }
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_Upd_Usuario", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pNm_Usuario", mNm_Usuario);
+            cmd.Parameters.AddWithValue("@pDs_Usuario", mDs_Usuario);
+            cmd.Parameters.AddWithValue("@pDs_Senha", mDs_Senha);
+            cmd.Parameters.AddWithValue("@pSt_Usuario", mSt_Usuario);
+            cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
+            cmd.ExecuteReader(CommandBehavior.SingleRow);
+            conexao.desconectar();
         }
-        public override string VizualizarProfessor(int Id)
+        public override void Selecionar()
         {
             ClsConexao conexao = new ClsConexao();
-            try
-            {
-                conexao.conectar();
-                SqlCommand cmd = new SqlCommand("sp_Vizualizar_Usuario", conexao.conexao);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pId_Prontuario", Id);
-                SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
-                if (dr.Read())
-                {
-                    ClsProfessor professor = new ClsProfessor();
-                    professor.Id_Prontuario = Id;
-                    professor.Nm_Usuario = dr["nm_usuario"].ToString();
-                    professor.St_Usuario = Convert.ToInt32(dr["St_Usuario"].ToString());
-                    return ("true");
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            catch
-            {
-                return null;
-            }
-            finally
-            {
-                conexao.desconectar();
-            }
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_Vizualizar_Usuario", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            ClsProfessor professor = new ClsProfessor();
+            professor.Id_Prontuario = mId_Prontuario;
+            professor.Nm_Usuario = dr["nm_usuario"].ToString();
+            professor.St_Usuario = Convert.ToInt32(dr["St_Usuario"].ToString());
+            conexao.desconectar();
         }
-        public override string AfastarProfessor()
+        public override void Desativa()
         {
             ClsConexao conexao = new ClsConexao();
-            try
-            {
-                conexao.conectar();
-                SqlCommand cmd = new SqlCommand("sp_Upd_Usuario", conexao.conexao);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pNm_Usuario", mNm_Usuario);
-                cmd.Parameters.AddWithValue("@pDs_Usuario", mDs_Usuario);
-                cmd.Parameters.AddWithValue("@pDs_Senha", mDs_Senha);
-                cmd.Parameters.AddWithValue("@pSt_Usuario", mSt_Usuario);
-                cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
-                cmd.ExecuteReader(CommandBehavior.SingleRow);
-                return ("true");
-            }
-            catch (Exception ex)
-            {
-                return ex.ToString();
-            }
-            finally
-            {
-                conexao.desconectar();
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_Inativo_Usuario", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId_Usuario", mId_Prontuario);
+            cmd.ExecuteReader(CommandBehavior.SingleRow);
+            conexao.desconectar();
+        }
 
-            }
-        }
-        public override bool verificacao(string Usuario, string Senha)
+        public bool Login()
         {
             ClsConexao conexao = new ClsConexao();
             try
@@ -163,8 +108,8 @@ namespace tind4s
                 conexao.conectar();
                 SqlCommand cmd = new SqlCommand("sp_Vizualizar_Usuario", conexao.conexao);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@pDs_Usuario", Usuario);
-                cmd.Parameters.AddWithValue("@pDs_Senha", Senha);
+                cmd.Parameters.AddWithValue("@pDs_Usuario", mDs_Usuario);
+                cmd.Parameters.AddWithValue("@pDs_Senha", mDs_Senha);
                 SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
                 if (dr.Read())
                 {
@@ -188,11 +133,11 @@ namespace tind4s
         }
 
 
-        public void Grid()
+        public override void PreencheGrid()
         {
             ClsConexao conexao = new ClsConexao();
             conexao.conectar();
-            SqlCommand cmd = new SqlCommand("sp_Grid_Usuario", conexao.conexao);
+            SqlCommand cmd = new SqlCommand("sp_Select_Usuario", conexao.conexao);
             cmd.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet DSU = new DataSet();
@@ -201,5 +146,7 @@ namespace tind4s
             conexao.desconectar();
 
         }
+
+        
     }
 }

@@ -6,5 +6,5 @@ Create procedure sp_Ins_Alternarivas(@pDs_Alternativa Varchar(500),
 									 @pId_Questao int)
 as
 begin
-	insert into TB_Alternativas(Ds_Alternativa, Verificacao, Id_Questao) values(@pDs_Alternativa, @pVerificacao,@pId_Questao);
+	insert into TB_Alternativas(Ds_Alternativa, St_Verificacao, Id_Questao) values(@pDs_Alternativa, @pVerificacao,@pId_Questao);
 end;

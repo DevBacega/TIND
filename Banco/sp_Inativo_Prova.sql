@@ -4,7 +4,7 @@ go
 Create procedure sp_Inativo_Prova(@pId int)
 as
 begin
-	Declare @Status TINYINT;
+	Declare @Status int;
 	Set @Status = (Select St_Prova from TB_Prova where Id_Prova = @pId)
 
 	IF @Status = 1

@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace tind4s
 {
-    public partial class frmLoginn : Form
+    public partial class frmLogin : Form
     {
-        public frmLoginn()
+        public frmLogin()
         {
             InitializeComponent();
             //txtSenha.isPassword = true;
         }
 
-        ClsProfessor professor = new ClsProfessor();
+        
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            if (professor.verificacao(txtUsuario.Text, txtSenha.Text) == true)
+            ClsProfessor professor = new ClsProfessor()
+            {
+                Ds_Usuario = txtUsuario.Text,
+                Ds_Senha = txtSenha.Text
+            };
+            if (professor.Login() == true)
             {
                 /*frmUsuario frm = new frmUsuario();
                 this.Hide();
@@ -34,6 +39,7 @@ namespace tind4s
             {
                 MessageBox.Show("Usuário Inválido");
             }
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)
