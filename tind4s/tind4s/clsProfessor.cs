@@ -83,9 +83,10 @@ namespace tind4s
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
-            Id_Prontuario = mId_Prontuario;
-            Nm_Usuario = dr["nm_usuario"].ToString();
-            St_Usuario = Convert.ToInt32(dr["St_Usuario"].ToString());
+            ClsProfessor professor = new ClsProfessor();
+            professor.Id_Prontuario = mId_Prontuario;
+            professor.Nm_Usuario = dr["nm_usuario"].ToString();
+            professor.St_Usuario = Convert.ToInt32(dr["St_Usuario"].ToString());
             conexao.desconectar();
         }
         public override void Desativa()

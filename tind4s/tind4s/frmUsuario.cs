@@ -24,6 +24,24 @@ namespace tind4s
         }
         int aux = 1;
 
+
+
+
+        //private void loadGrid()
+        //{
+        //    ClsProfessor mObjprofessor = new ClsProfessor();
+        //    mObjprofessor.PreencheGrid();
+        //    gridUsuario.DataSource = mObjprofessor.DSUsuario.Tables[0];
+        //    gridUsuario.ReadOnly = true;
+        //        //gridUsuario.Columns[0].HeaderText = "Prontuario";
+        //        //gridUsuario.Columns[1].HeaderText = "Nome";
+
+        //        gridUsuario.AutoResizeColumns();
+
+        //        gridUsuario.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+        //}
+
         public void limpar()
         {
             txtProfessor.Text = string.Empty;

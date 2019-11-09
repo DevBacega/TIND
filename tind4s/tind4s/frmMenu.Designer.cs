@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnSair = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCurso = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -41,6 +40,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.MenuConteudo = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
@@ -50,7 +50,6 @@
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(81)))), ((int)(((byte)(123)))));
-            this.pnlMenu.Controls.Add(this.btnSair);
             this.pnlMenu.Controls.Add(this.btnCurso);
             this.pnlMenu.Controls.Add(this.bunifuFlatButton1);
             this.pnlMenu.Controls.Add(this.bunifuFlatButton3);
@@ -60,45 +59,10 @@
             this.pnlMenu.Controls.Add(this.imgLogo);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
-            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(255, 520);
             this.pnlMenu.TabIndex = 0;
-            // 
-            // btnSair
-            // 
-            this.btnSair.Activecolor = System.Drawing.Color.White;
-            this.btnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSair.BorderRadius = 0;
-            this.btnSair.ButtonText = "                Sair";
-            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSair.DisabledColor = System.Drawing.Color.Gray;
-            this.btnSair.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnSair.Iconimage = null;
-            this.btnSair.Iconimage_right = null;
-            this.btnSair.Iconimage_right_Selected = null;
-            this.btnSair.Iconimage_Selected = null;
-            this.btnSair.IconMarginLeft = 0;
-            this.btnSair.IconMarginRight = 0;
-            this.btnSair.IconRightVisible = true;
-            this.btnSair.IconRightZoom = 0D;
-            this.btnSair.IconVisible = true;
-            this.btnSair.IconZoom = 90D;
-            this.btnSair.IsTab = false;
-            this.btnSair.Location = new System.Drawing.Point(3, 460);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnSair.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.btnSair.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnSair.selected = false;
-            this.btnSair.Size = new System.Drawing.Size(255, 48);
-            this.btnSair.TabIndex = 0;
-            this.btnSair.Text = "                Sair";
-            this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Textcolor = System.Drawing.Color.White;
-            this.btnSair.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnCurso
             // 
@@ -121,20 +85,19 @@
             this.btnCurso.IconVisible = true;
             this.btnCurso.IconZoom = 60D;
             this.btnCurso.IsTab = false;
-            this.btnCurso.Location = new System.Drawing.Point(0, 386);
-            this.btnCurso.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCurso.Location = new System.Drawing.Point(2, 374);
             this.btnCurso.Name = "btnCurso";
             this.btnCurso.Normalcolor = System.Drawing.Color.Transparent;
             this.btnCurso.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(41)))), ((int)(((byte)(85)))));
             this.btnCurso.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCurso.selected = false;
-            this.btnCurso.Size = new System.Drawing.Size(334, 53);
+            this.btnCurso.Size = new System.Drawing.Size(250, 43);
             this.btnCurso.TabIndex = 5;
             this.btnCurso.Text = "                Cursos";
             this.btnCurso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCurso.Textcolor = System.Drawing.Color.White;
             this.btnCurso.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCurso.Click += new System.EventHandler(this.BtnCurso_Click);
+            this.btnCurso.Click += new System.EventHandler(this.btnCurso_Click);
             // 
             // bunifuFlatButton1
             // 
@@ -157,14 +120,13 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 60D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 325);
-            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(2, 324);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(41)))), ((int)(((byte)(85)))));
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(334, 53);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(250, 43);
             this.bunifuFlatButton1.TabIndex = 4;
             this.bunifuFlatButton1.Text = "                Materias";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,7 +245,7 @@
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(214, 2);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(27, 24);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -296,7 +258,7 @@
             // 
             this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
             this.imgLogo.Location = new System.Drawing.Point(1, 0);
-            this.imgLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.imgLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imgLogo.Name = "imgLogo";
             this.imgLogo.Size = new System.Drawing.Size(118, 70);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -306,10 +268,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.panel1.Controls.Add(this.btnFechar);
             this.panel1.Controls.Add(this.lblTitulo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(255, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(812, 67);
             this.panel1.TabIndex = 1;
@@ -332,10 +295,23 @@
             this.MenuConteudo.BackColor = System.Drawing.Color.Transparent;
             this.MenuConteudo.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuConteudo.Location = new System.Drawing.Point(255, 67);
-            this.MenuConteudo.Margin = new System.Windows.Forms.Padding(2);
+            this.MenuConteudo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MenuConteudo.Name = "MenuConteudo";
             this.MenuConteudo.Size = new System.Drawing.Size(803, 453);
             this.MenuConteudo.TabIndex = 2;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.White;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(778, 3);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(31, 23);
+            this.btnFechar.TabIndex = 32;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.BtnFechar_Click);
             // 
             // frmMenu
             // 
@@ -347,7 +323,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMenu";
@@ -373,6 +349,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private Bunifu.Framework.UI.BunifuFlatButton btnCurso;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnSair;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

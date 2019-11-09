@@ -17,11 +17,11 @@ namespace tind4s
             InitializeComponent();
             lblTitulo.Visible = false;
         }
-
         frmUsuario frmUser = new frmUsuario();
+
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            if (pnlMenu.Width == 52)
+            if(pnlMenu.Width == 52)
             {
                 pnlMenu.Width = 255;
                 MenuConteudo.Width = 1064;
@@ -39,7 +39,6 @@ namespace tind4s
 
         private void btnUsuario_Click(object sender, EventArgs e)
         {
-            //frmUsuario frmUser = new frmUsuario();
             frmUser.TopLevel = false;
             frmUser.AutoScroll = true;
             this.MenuConteudo.Controls.Add(frmUser);
@@ -54,37 +53,33 @@ namespace tind4s
 
         }
 
-
-        private void btnSair_Click(object sender, EventArgs e)
+        private void btnCurso_Click(object sender, EventArgs e)
         {
-            this.Close();
+            frmCurso frm = new frmCurso();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frm);
+            frm.Dock = DockStyle.Left;
+            frm.Show();
+            lblTitulo.Visible = true;
+            lblTitulo.Text = "Controle de Curso";
         }
 
         private void BunifuFlatButton1_Click(object sender, EventArgs e)
         {
-            frmMateria frmMat = new frmMateria();
-            frmMat.TopLevel = false;
-            frmMat.AutoScroll = true;
-            this.MenuConteudo.Controls.Add(frmMat);
-            frmMat.Dock = DockStyle.Left;
-            frmMat.Show();
+            frmMateria frm = new frmMateria();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frm);
+            frm.Dock = DockStyle.Left;
+            frm.Show();
             lblTitulo.Visible = true;
-            lblTitulo.Text = "Controle de Usuários";
-
-
+            lblTitulo.Text = "Controle de Materia";
         }
 
-        private void BtnCurso_Click(object sender, EventArgs e)
+        private void BtnFechar_Click(object sender, EventArgs e)
         {
-            //frmCurso frm = new frmCurso();
-            //frm.TopLevel = false;
-            //frm.AutoScroll = true;
-            //this.MenuConteudo.Controls.Add(frm);
-            //frm.Dock = DockStyle.Left;
-            //frm.Show();
-            //lblTitulo.Visible = true;
-            //lblTitulo.Text = "Controle de Curso";
-
+            this.Close();
         }
     }
 }
