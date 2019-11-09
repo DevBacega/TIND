@@ -69,3 +69,15 @@ D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\bin\Debug\tind4s.exe.config
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.exe
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\bin\Debug\tind4s.exe
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\bin\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.csprojResolveAssemblyReference.cache
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.Cache
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmCurso.resources

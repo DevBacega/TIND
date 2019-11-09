@@ -52,5 +52,17 @@ namespace tind4s
         {
 
         }
+
+        private void btnCurso_Click(object sender, EventArgs e)
+        {
+            frmCurso frm = new frmCurso();
+            frm.TopLevel = false;
+            frm.AutoScroll = true;
+            this.MenuConteudo.Controls.Add(frm);
+            frm.Dock = DockStyle.Left;
+            frm.Show();
+            lblTitulo.Visible = true;
+            lblTitulo.Text = "Controle de Curso";
+        }
     }
 }
