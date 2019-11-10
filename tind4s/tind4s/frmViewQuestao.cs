@@ -80,7 +80,7 @@ namespace tind4s
             frm.txtJustificativa.Text = gridQuestao.CurrentRow.Cells[2].Value.ToString();
                 
 
-            frm.Show();
+            frm.ShowDialog();
         }
 
 

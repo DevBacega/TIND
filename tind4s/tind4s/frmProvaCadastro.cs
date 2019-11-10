@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tind4s
@@ -18,7 +12,7 @@ namespace tind4s
             InitializeComponent();
             Limpar();
             PreencherCurso();
-            
+
         }
 
         public void Limpar()
@@ -62,7 +56,7 @@ namespace tind4s
         private void CriarGrid()
         {
             dt.Columns.Add("Id");
-            
+
             dt.Columns.Add("Sigla");
             dt.Columns.Add("Qtd");
             dgvMateria.DataSource = dt;
@@ -79,6 +73,39 @@ namespace tind4s
         private void BtnInserirMateria_Click(object sender, EventArgs e)
         {
             InserirMateria();
+        }
+
+        private void BunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            GerarProva();
+        }
+
+        private void GerarProva()
+        {
+            ClsProva mObjProva = new ClsProva()
+            {
+                Nm_Prova = txtProva.Text,
+                Id_Prontuario = 1
+            };
+            int IdProva;
+            mObjProva.Inserir();
+            mObjProva.maxId();
+            IdProva = mObjProva.Id_Prova;
+
+            foreach(DataGridViewRow ROW in dgvMateria.Rows)
+            {
+                mObjProva.Qtd = Convert.ToInt32(ROW.Cells[2].Value);
+                mObjProva.Id_Materia = Convert.ToInt32(ROW.Cells[0].Value);
+                mObjProva.SelecionaQuestaoProva();
+                DataSet TbTemp = mObjProva.DSProva;
+
+                foreach(DataRow Line in TbTemp.Tables[0].Rows )
+                {
+                    mObjProva.Id_Questao = Convert.ToInt32(Line[0]);
+                    mObjProva.Id_Prova = IdProva;
+                    mObjProva.InserirQuestaoProva();
+                }
+            }
         }
     }
 }

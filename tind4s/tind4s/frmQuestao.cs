@@ -90,7 +90,7 @@ namespace tind4s
 
         public int maxID()
         {
-            int codigo = 0;
+            int codigo;
             ClsConexao conexao = new ClsConexao();
             conexao.conectar();
 

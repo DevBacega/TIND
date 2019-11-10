@@ -236,6 +236,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(305, 78);
             this.bunifuThinButton21.TabIndex = 92;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.BunifuThinButton21_Click);
             // 
             // dgvMateria
             // 
@@ -254,6 +255,7 @@
             this.dgvMateria.Name = "dgvMateria";
             this.dgvMateria.ReadOnly = true;
             this.dgvMateria.RowHeadersVisible = false;
+            this.dgvMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMateria.Size = new System.Drawing.Size(165, 252);
             this.dgvMateria.TabIndex = 93;
             // 

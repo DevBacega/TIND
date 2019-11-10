@@ -16,8 +16,15 @@ namespace tind4s
         private int mId_Prontuario;
         private string mNm_Prova;
         private int mST_Prova;
+        private int mQtd;
+        private int mId_Questao;
 
         public DataSet DSProva { get; set; }
+        public int Qtd
+        {
+            get {return mQtd; }
+            set {mQtd = value; }
+        }
 
         public int Id_Prova
         {
@@ -37,6 +44,12 @@ namespace tind4s
             set { mId_Curso = value; }
         }
 
+        public int Id_Questao
+        {
+            get { return mId_Questao; }
+            set { mId_Questao = value; }
+        }
+
         public int Id_Prontuario
         {
             get { return mId_Prontuario; }
@@ -51,8 +64,8 @@ namespace tind4s
 
         public int ST_Prova
         {
-            get { return ST_Prova; }
-            set { ST_Prova = value; }
+            get { return mST_Prova; }
+            set { mST_Prova = value; }
         }
 
         public override void Inserir()
@@ -62,9 +75,9 @@ namespace tind4s
             mObjconexao.conectar();
             SqlCommand cmd = new SqlCommand("sp_Ins_Prova", mObjconexao.conexao);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@pNm_Prova	", mNm_Prova);
-            cmd.Parameters.AddWithValue("@pSt_Prova", mST_Prova);
-            cmd.Parameters.AddWithValue("@pId_Prontuario", mId_Prontuario);
+            cmd.Parameters.AddWithValue("@pNm_Prova", mNm_Prova);
+            cmd.Parameters.AddWithValue("@pSt_Prova", 1);
+            cmd.Parameters.AddWithValue("@pId_Prontuario", 1);
             cmd.ExecuteReader(CommandBehavior.SingleRow);
             mObjconexao.desconectar();
         }
@@ -110,18 +123,7 @@ namespace tind4s
 
         public override void Selecionar()
         {
-            //ClsConexao mObjconexao = new ClsConexao();
-            //mObjconexao.conectar();
-            //SqlCommand cmd = new SqlCommand("sp_Upd_Prova", mObjconexao.conexao);
-            //cmd.CommandType = CommandType.StoredProcedure;
-            //cmd.Parameters.AddWithValue("@pId_Materia", mId_Materia);
-            //SqlDataReader DR = cmd.ExecuteReader(CommandBehavior.SingleRow);
-            //DR.Read();
-            //Id_Materia = Convert.ToInt32(DR["Id_Materia"]);
-            //Nm_Materia = DR["Nm_Materia"].ToString();
-            //Sg_Materia = DR["Abrev_Nm_Materia"].ToString();
-            //Id_Curso = Convert.ToInt32(DR["Id_Curso"]);
-            //mObjconexao.desconectar();
+            
         }
 
         public void SelecionaCursoMateria()
@@ -136,6 +138,52 @@ namespace tind4s
             da.Fill(DSU);
             DSProva = DSU;
             conexao.desconectar();
+        }
+
+        public void maxId()
+        {
+            ClsConexao conexao = new ClsConexao();
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_MAX_Prova", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
+            if(dr.HasRows)
+            {
+                dr.Read();
+                Id_Prova = Convert.ToInt32(dr["ID"].ToString());
+            }
+            else
+            {
+                Id_Prova = 1;
+            }
+            conexao.desconectar();
+        }
+
+        public void SelecionaQuestaoProva()
+        {
+            ClsConexao mObjconexao = new ClsConexao();
+            mObjconexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_Select_Gprova", mObjconexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId_Materia", mId_Materia);
+            cmd.Parameters.AddWithValue("@pQnt", mQtd);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet DSU = new DataSet();
+            da.Fill(DSU);
+            DSProva = DSU;
+            mObjconexao.desconectar();
+        }
+
+        public void InserirQuestaoProva()
+        {
+            ClsConexao mObjconexao = new ClsConexao();
+            mObjconexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_Ins_Questao_Prova", mObjconexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId_Prova", mId_Prova);
+            cmd.Parameters.AddWithValue("@pId_Questao", mId_Questao);
+            cmd.ExecuteReader(CommandBehavior.SingleRow);
+            mObjconexao.desconectar();
         }
     }
 }
