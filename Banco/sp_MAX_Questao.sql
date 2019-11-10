@@ -4,6 +4,6 @@ go
 Create procedure sp_MAX_Questao
 as
 begin
-    SELECT MAX(Id_Questao) AS IDNOVO
+    SELECT MAX(Id_Questao)+1 AS IDNOVO
 	from TB_Questao
 end;

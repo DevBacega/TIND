@@ -3,7 +3,8 @@ drop procedure if exists sp_Upd_Alternativas
 go
 Create procedure sp_Upd_Alternativas(@pId_Alternativas int, 
 									@pDs_Alternativa varchar(500),
-									@pSt_Verificacao int)
+									@pSt_Verificacao int,
+									@pId_Questao int)
 as
 begin
 	Update TB_Alternativas

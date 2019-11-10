@@ -47,8 +47,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridQuestao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridQuestao.BackgroundColor = System.Drawing.Color.White;
-            this.gridQuestao.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridQuestao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridQuestao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
@@ -68,20 +66,21 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridQuestao.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridQuestao.DoubleBuffered = true;
-            this.gridQuestao.EnableHeadersVisualStyles = false;
             this.gridQuestao.GridColor = System.Drawing.Color.WhiteSmoke;
             this.gridQuestao.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.gridQuestao.HeaderForeColor = System.Drawing.Color.White;
-            this.gridQuestao.Location = new System.Drawing.Point(12, 11);
-            this.gridQuestao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridQuestao.Location = new System.Drawing.Point(9, 9);
+            this.gridQuestao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridQuestao.MultiSelect = false;
             this.gridQuestao.Name = "gridQuestao";
+            this.gridQuestao.ReadOnly = true;
             this.gridQuestao.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridQuestao.RowHeadersVisible = false;
             this.gridQuestao.RowTemplate.DividerHeight = 1;
             this.gridQuestao.RowTemplate.Height = 30;
             this.gridQuestao.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridQuestao.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridQuestao.Size = new System.Drawing.Size(1043, 339);
+            this.gridQuestao.Size = new System.Drawing.Size(782, 275);
             this.gridQuestao.TabIndex = 86;
             // 
             // btnNovo
@@ -104,10 +103,10 @@
             this.btnNovo.IdleFillColor = System.Drawing.Color.White;
             this.btnNovo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnNovo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnNovo.Location = new System.Drawing.Point(747, 440);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnNovo.Location = new System.Drawing.Point(560, 358);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(147, 55);
+            this.btnNovo.Size = new System.Drawing.Size(110, 45);
             this.btnNovo.TabIndex = 87;
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
@@ -132,10 +131,10 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(908, 440);
-            this.btnDeletar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnDeletar.Location = new System.Drawing.Point(681, 358);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(147, 55);
+            this.btnDeletar.Size = new System.Drawing.Size(110, 45);
             this.btnDeletar.TabIndex = 88;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -159,25 +158,26 @@
             this.btnAtualizar.IdleFillColor = System.Drawing.Color.White;
             this.btnAtualizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnAtualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnAtualizar.Location = new System.Drawing.Point(586, 440);
-            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnAtualizar.Location = new System.Drawing.Point(440, 358);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(147, 55);
+            this.btnAtualizar.Size = new System.Drawing.Size(110, 45);
             this.btnAtualizar.TabIndex = 89;
             this.btnAtualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // frmViewQuestao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 510);
+            this.ClientSize = new System.Drawing.Size(800, 414);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.gridQuestao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmViewQuestao";
             this.Text = "frmViewQuestao";
             ((System.ComponentModel.ISupportInitialize)(this.gridQuestao)).EndInit();

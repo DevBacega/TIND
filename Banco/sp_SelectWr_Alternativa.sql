@@ -4,7 +4,7 @@ go
 Create procedure sp_SelectWr_Alternativa(@pId int)
 as
 begin
-	Select Id_Alternativas, Ds_Alternativa, St_Verificacao, Id_Questao
+	Select Id_Alternativas, Ds_Alternativa, St_Verificacao
 	from TB_Alternativas
-	where Id_Questao = @pId;
+	where Id_Alternativas = @pId;
 end;

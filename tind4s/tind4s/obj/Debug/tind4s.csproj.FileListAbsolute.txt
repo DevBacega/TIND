@@ -119,8 +119,24 @@ D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
-C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources
-C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmProva.resources
-C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmProvaCadastro.resources
-C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
-C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe.config
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\bin\Debug\tind4s.exe
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\bin\Debug\tind4s.pdb
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csprojAssemblyReference.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmCurso.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmProva.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmProvaCadastro.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CoreCompileInputs.cache
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
+D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb

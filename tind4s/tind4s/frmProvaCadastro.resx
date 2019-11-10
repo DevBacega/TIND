@@ -132,6 +132,9 @@
         0lQV8WICYv82a0WuJCVCJXmgkjxQSR6opLYY8wOFGn6kax0paAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="btnExcluirMateria.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="btnExcluirMateria.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEkAAAAkCAYAAADFGRdYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -146,6 +149,9 @@
         0lQV8WICYv82a0WuJCVCJXmgkjxQSR6opLYY8wOFGn6kax0paAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="bunifuThinButton21.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATEAAABOCAYAAABIZiHIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

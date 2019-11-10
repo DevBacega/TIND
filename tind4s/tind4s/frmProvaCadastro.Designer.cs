@@ -36,12 +36,13 @@
             this.txtProva = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblIdProva = new System.Windows.Forms.Label();
-            this.bunifuMetroTextbox1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtQtd = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblQuestao = new System.Windows.Forms.Label();
-            this.lsMateria = new System.Windows.Forms.ListBox();
             this.btnInserirMateria = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnExcluirMateria = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.dgvMateria = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).BeginInit();
             this.SuspendLayout();
             // 
             // cbCurso
@@ -113,7 +114,7 @@
             this.lblTitulo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(25, 38);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(0, 22);
+            this.lblTitulo.Size = new System.Drawing.Size(60, 22);
             this.lblTitulo.TabIndex = 84;
             this.lblTitulo.Text = "Titulo:";
             // 
@@ -126,22 +127,22 @@
             this.lblIdProva.TabIndex = 86;
             this.lblIdProva.Visible = false;
             // 
-            // bunifuMetroTextbox1
+            // txtQtd
             // 
-            this.bunifuMetroTextbox1.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.bunifuMetroTextbox1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.bunifuMetroTextbox1.BorderThickness = 1;
-            this.bunifuMetroTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMetroTextbox1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.bunifuMetroTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMetroTextbox1.isPassword = false;
-            this.bunifuMetroTextbox1.Location = new System.Drawing.Point(136, 154);
-            this.bunifuMetroTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMetroTextbox1.Name = "bunifuMetroTextbox1";
-            this.bunifuMetroTextbox1.Size = new System.Drawing.Size(53, 29);
-            this.bunifuMetroTextbox1.TabIndex = 88;
-            this.bunifuMetroTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtQtd.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.txtQtd.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtQtd.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.txtQtd.BorderThickness = 1;
+            this.txtQtd.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtQtd.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtQtd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtQtd.isPassword = false;
+            this.txtQtd.Location = new System.Drawing.Point(136, 154);
+            this.txtQtd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQtd.Name = "txtQtd";
+            this.txtQtd.Size = new System.Drawing.Size(53, 29);
+            this.txtQtd.TabIndex = 88;
+            this.txtQtd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblQuestao
             // 
@@ -153,14 +154,6 @@
             this.lblQuestao.Size = new System.Drawing.Size(123, 22);
             this.lblQuestao.TabIndex = 87;
             this.lblQuestao.Text = "Qtd Questão:";
-            // 
-            // lsMateria
-            // 
-            this.lsMateria.FormattingEnabled = true;
-            this.lsMateria.Location = new System.Drawing.Point(325, 31);
-            this.lsMateria.Name = "lsMateria";
-            this.lsMateria.Size = new System.Drawing.Size(167, 238);
-            this.lsMateria.TabIndex = 89;
             // 
             // btnInserirMateria
             // 
@@ -188,6 +181,7 @@
             this.btnInserirMateria.Size = new System.Drawing.Size(73, 36);
             this.btnInserirMateria.TabIndex = 90;
             this.btnInserirMateria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnInserirMateria.Click += new System.EventHandler(this.BtnInserirMateria_Click);
             // 
             // btnExcluirMateria
             // 
@@ -243,17 +237,38 @@
             this.bunifuThinButton21.TabIndex = 92;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dgvMateria
+            // 
+            this.dgvMateria.AllowUserToAddRows = false;
+            this.dgvMateria.AllowUserToDeleteRows = false;
+            this.dgvMateria.AllowUserToOrderColumns = true;
+            this.dgvMateria.AllowUserToResizeColumns = false;
+            this.dgvMateria.AllowUserToResizeRows = false;
+            this.dgvMateria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMateria.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMateria.EnableHeadersVisualStyles = false;
+            this.dgvMateria.GridColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dgvMateria.Location = new System.Drawing.Point(332, 12);
+            this.dgvMateria.MultiSelect = false;
+            this.dgvMateria.Name = "dgvMateria";
+            this.dgvMateria.ReadOnly = true;
+            this.dgvMateria.RowHeadersVisible = false;
+            this.dgvMateria.Size = new System.Drawing.Size(165, 252);
+            this.dgvMateria.TabIndex = 93;
+            // 
             // frmProvaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(509, 313);
+            this.Controls.Add(this.dgvMateria);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.btnExcluirMateria);
             this.Controls.Add(this.btnInserirMateria);
-            this.Controls.Add(this.lsMateria);
-            this.Controls.Add(this.bunifuMetroTextbox1);
+            this.Controls.Add(this.txtQtd);
             this.Controls.Add(this.lblQuestao);
             this.Controls.Add(this.lblIdProva);
             this.Controls.Add(this.txtProva);
@@ -264,7 +279,9 @@
             this.Controls.Add(this.lblCurso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProvaCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmProvaCadastro";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,11 +296,11 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtProva;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblIdProva;
-        private Bunifu.Framework.UI.BunifuMetroTextbox bunifuMetroTextbox1;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txtQtd;
         private System.Windows.Forms.Label lblQuestao;
-        private System.Windows.Forms.ListBox lsMateria;
         private Bunifu.Framework.UI.BunifuThinButton2 btnInserirMateria;
         private Bunifu.Framework.UI.BunifuThinButton2 btnExcluirMateria;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.DataGridView dgvMateria;
     }
 }

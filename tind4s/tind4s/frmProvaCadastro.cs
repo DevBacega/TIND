@@ -12,11 +12,13 @@ namespace tind4s
 {
     public partial class frmProvaCadastro : Form
     {
+        DataTable dt = new DataTable("Materia");
         public frmProvaCadastro()
         {
             InitializeComponent();
             Limpar();
             PreencherCurso();
+            
         }
 
         public void Limpar()
@@ -24,7 +26,7 @@ namespace tind4s
             txtProva.Text = string.Empty;
             cbCurso.SelectedItem = string.Empty;
             cbMateria.SelectedItem = string.Empty;
-            lsMateria.Items.Clear();
+            CriarGrid();
         }
 
         public void PreencherCurso()
@@ -55,6 +57,28 @@ namespace tind4s
         {
             cbMateria.Text = string.Empty;
             PreencherMateria();
+        }
+
+        private void CriarGrid()
+        {
+            dt.Columns.Add("Id");
+            
+            dt.Columns.Add("Sigla");
+            dt.Columns.Add("Qtd");
+            dgvMateria.DataSource = dt;
+            dgvMateria.Refresh();
+            dgvMateria.Columns[0].Visible = false;
+        }
+
+        private void InserirMateria()
+        {
+            dt.Rows.Add(cbMateria.SelectedValue, cbMateria.Text, txtQtd.Text);
+            dgvMateria.Refresh();
+        }
+
+        private void BtnInserirMateria_Click(object sender, EventArgs e)
+        {
+            InserirMateria();
         }
     }
 }

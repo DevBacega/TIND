@@ -109,7 +109,7 @@ namespace tind4s
 
         }
 
-        public void EncerrarForm()
+        private void EncerrarForm()
         {
             this.MenuConteudo.Controls.Clear();
         }

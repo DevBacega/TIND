@@ -16,5 +16,10 @@ namespace tind4s
         {
             InitializeComponent();
         }
+
+        private void BtnNovo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
