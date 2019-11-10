@@ -54,7 +54,7 @@ namespace tind4s
         private void btnProva_Click(object sender, EventArgs e)
         {
             EncerrarForm();
-            frmProvaCadastro frm = new frmProvaCadastro();
+            frmProva frm = new frmProva();
             frm.TopLevel = false;
             frm.AutoScroll = true;
             this.MenuConteudo.Controls.Add(frm);

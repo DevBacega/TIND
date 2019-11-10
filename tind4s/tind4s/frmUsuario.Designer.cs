@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuario));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAtualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCadastrar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -41,16 +41,16 @@
             this.txtUsuario = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblProfessor = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblProntuario = new System.Windows.Forms.Label();
             this.tBUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tind4sDataSet1 = new tind4s.tind4sDataSet1();
+           // this.tind4sDataSet1 = new tind4s.tind4sDataSet1();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblId_Prontuario = new System.Windows.Forms.Label();
             this.lblInativo = new System.Windows.Forms.Label();
-            this.tB_UsuarioTableAdapter = new tind4s.tind4sDataSet1TableAdapters.TB_UsuarioTableAdapter();
+           // this.tB_UsuarioTableAdapter = new tind4s.tind4sDataSet1TableAdapters.TB_UsuarioTableAdapter();
             this.gridUsuario = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.tBUsuarioBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).BeginInit();
+           // ((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,10 +74,10 @@
             this.btnAtualizar.IdleFillColor = System.Drawing.Color.White;
             this.btnAtualizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnAtualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnAtualizar.Location = new System.Drawing.Point(673, 275);
+            this.btnAtualizar.Location = new System.Drawing.Point(556, 358);
             this.btnAtualizar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(110, 45);
+            this.btnAtualizar.Size = new System.Drawing.Size(110, 43);
             this.btnAtualizar.TabIndex = 41;
             this.btnAtualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
@@ -102,10 +102,10 @@
             this.btnCadastrar.IdleFillColor = System.Drawing.Color.White;
             this.btnCadastrar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnCadastrar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnCadastrar.Location = new System.Drawing.Point(675, 317);
+            this.btnCadastrar.Location = new System.Drawing.Point(437, 358);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(5);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(110, 45);
+            this.btnCadastrar.Size = new System.Drawing.Size(110, 43);
             this.btnCadastrar.TabIndex = 38;
             this.btnCadastrar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -130,10 +130,10 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(675, 361);
+            this.btnDeletar.Location = new System.Drawing.Point(675, 358);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(110, 45);
+            this.btnDeletar.Size = new System.Drawing.Size(110, 43);
             this.btnDeletar.TabIndex = 39;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
@@ -148,7 +148,7 @@
             this.txtSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSenha.isPassword = false;
-            this.txtSenha.Location = new System.Drawing.Point(194, 75);
+            this.txtSenha.Location = new System.Drawing.Point(127, 339);
             this.txtSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(222, 29);
@@ -165,10 +165,10 @@
             this.txtProfessor.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtProfessor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtProfessor.isPassword = false;
-            this.txtProfessor.Location = new System.Drawing.Point(194, 119);
+            this.txtProfessor.Location = new System.Drawing.Point(462, 296);
             this.txtProfessor.Margin = new System.Windows.Forms.Padding(4);
             this.txtProfessor.Name = "txtProfessor";
-            this.txtProfessor.Size = new System.Drawing.Size(222, 29);
+            this.txtProfessor.Size = new System.Drawing.Size(207, 29);
             this.txtProfessor.TabIndex = 35;
             this.txtProfessor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -182,7 +182,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsuario.isPassword = false;
-            this.txtUsuario.Location = new System.Drawing.Point(194, 32);
+            this.txtUsuario.Location = new System.Drawing.Point(127, 296);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(222, 28);
@@ -194,7 +194,7 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(115, 75);
+            this.lblSenha.Location = new System.Drawing.Point(49, 342);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(69, 22);
             this.lblSenha.TabIndex = 31;
@@ -205,37 +205,37 @@
             this.lblProfessor.AutoSize = true;
             this.lblProfessor.BackColor = System.Drawing.Color.Transparent;
             this.lblProfessor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfessor.Location = new System.Drawing.Point(30, 124);
+            this.lblProfessor.Location = new System.Drawing.Point(354, 299);
             this.lblProfessor.Name = "lblProfessor";
-            this.lblProfessor.Size = new System.Drawing.Size(155, 22);
+            this.lblProfessor.Size = new System.Drawing.Size(99, 22);
             this.lblProfessor.TabIndex = 32;
-            this.lblProfessor.Text = "Nome Professor:";
+            this.lblProfessor.Text = "Professor:";
             // 
-            // lblUsuario
+            // lblProntuario
             // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(106, 32);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(79, 22);
-            this.lblUsuario.TabIndex = 33;
-            this.lblUsuario.Text = "Usuário:";
+            this.lblProntuario.AutoSize = true;
+            this.lblProntuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblProntuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProntuario.Location = new System.Drawing.Point(17, 299);
+            this.lblProntuario.Name = "lblProntuario";
+            this.lblProntuario.Size = new System.Drawing.Size(101, 22);
+            this.lblProntuario.TabIndex = 33;
+            this.lblProntuario.Text = "Prontuario:";
             // 
             // tBUsuarioBindingSource
             // 
             this.tBUsuarioBindingSource.DataMember = "TB_Usuario";
-            this.tBUsuarioBindingSource.DataSource = this.tind4sDataSet1;
+            //this.tBUsuarioBindingSource.DataSource = this.tind4sDataSet1;
             // 
             // tind4sDataSet1
             // 
-            this.tind4sDataSet1.DataSetName = "tind4sDataSet1";
-            this.tind4sDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           // this.tind4sDataSet1.DataSetName = "tind4sDataSet1";
+           // this.tind4sDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(21, 175);
+            this.lblResultado.Location = new System.Drawing.Point(12, 389);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(65, 13);
             this.lblResultado.TabIndex = 43;
@@ -244,7 +244,7 @@
             // lblId_Prontuario
             // 
             this.lblId_Prontuario.AutoSize = true;
-            this.lblId_Prontuario.Location = new System.Drawing.Point(30, 32);
+            this.lblId_Prontuario.Location = new System.Drawing.Point(83, 223);
             this.lblId_Prontuario.Name = "lblId_Prontuario";
             this.lblId_Prontuario.Size = new System.Drawing.Size(0, 13);
             this.lblId_Prontuario.TabIndex = 44;
@@ -252,7 +252,7 @@
             // lblInativo
             // 
             this.lblInativo.AutoSize = true;
-            this.lblInativo.Location = new System.Drawing.Point(191, 163);
+            this.lblInativo.Location = new System.Drawing.Point(83, 389);
             this.lblInativo.Name = "lblInativo";
             this.lblInativo.Size = new System.Drawing.Size(35, 13);
             this.lblInativo.TabIndex = 45;
@@ -260,49 +260,51 @@
             // 
             // tB_UsuarioTableAdapter
             // 
-            this.tB_UsuarioTableAdapter.ClearBeforeFill = true;
+           // this.tB_UsuarioTableAdapter.ClearBeforeFill = true;
             // 
             // gridUsuario
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.gridUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridUsuario.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridUsuario.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridUsuario.BackgroundColor = System.Drawing.Color.White;
+            this.gridUsuario.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.gridUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridUsuario.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridUsuario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUsuario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridUsuario.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridUsuario.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridUsuario.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridUsuario.DoubleBuffered = true;
             this.gridUsuario.EnableHeadersVisualStyles = false;
             this.gridUsuario.GridColor = System.Drawing.Color.WhiteSmoke;
             this.gridUsuario.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.gridUsuario.HeaderForeColor = System.Drawing.Color.White;
-            this.gridUsuario.Location = new System.Drawing.Point(23, 208);
+            this.gridUsuario.Location = new System.Drawing.Point(6, 4);
             this.gridUsuario.Margin = new System.Windows.Forms.Padding(2);
+            this.gridUsuario.MultiSelect = false;
             this.gridUsuario.Name = "gridUsuario";
+            this.gridUsuario.ReadOnly = true;
             this.gridUsuario.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridUsuario.RowHeadersVisible = false;
             this.gridUsuario.RowTemplate.DividerHeight = 1;
             this.gridUsuario.RowTemplate.Height = 30;
             this.gridUsuario.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridUsuario.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUsuario.Size = new System.Drawing.Size(643, 197);
+            this.gridUsuario.Size = new System.Drawing.Size(782, 278);
             this.gridUsuario.TabIndex = 63;
             this.gridUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.gridUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridUsuario_CellContentClick);
@@ -313,7 +315,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(797, 414);
+            this.ClientSize = new System.Drawing.Size(800, 410);
             this.Controls.Add(this.gridUsuario);
             this.Controls.Add(this.lblInativo);
             this.Controls.Add(this.lblId_Prontuario);
@@ -326,7 +328,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblProfessor);
-            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.lblProntuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
@@ -334,7 +336,7 @@
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.Resize += new System.EventHandler(this.Redimensionar);
             ((System.ComponentModel.ISupportInitialize)(this.tBUsuarioBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -351,13 +353,13 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox txtUsuario;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.Label lblProfessor;
-        private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblProntuario;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Label lblId_Prontuario;
         private System.Windows.Forms.Label lblInativo;
-        private tind4sDataSet1 tind4sDataSet1;
+       // private tind4sDataSet1 tind4sDataSet1;
         private System.Windows.Forms.BindingSource tBUsuarioBindingSource;
-        private tind4sDataSet1TableAdapters.TB_UsuarioTableAdapter tB_UsuarioTableAdapter;
+       // private tind4sDataSet1TableAdapters.TB_UsuarioTableAdapter tB_UsuarioTableAdapter;
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridUsuario;
 
     }

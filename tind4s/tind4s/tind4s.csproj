@@ -113,16 +113,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tind4sDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tind4sDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="tind4sDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>tind4sDataSet1.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="frmCurso.resx">
       <DependentUpon>frmCurso.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,28 +159,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="tind4sDataSet.xsc">
-      <DependentUpon>tind4sDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="tind4sDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>tind4sDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="tind4sDataSet.xss">
-      <DependentUpon>tind4sDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="tind4sDataSet1.xsc">
-      <DependentUpon>tind4sDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="tind4sDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>tind4sDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="tind4sDataSet1.xss">
-      <DependentUpon>tind4sDataSet1.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

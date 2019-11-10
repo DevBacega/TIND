@@ -103,7 +103,7 @@ namespace tind4s
             mObjconexao.conectar();
             SqlCommand cmd = new SqlCommand("sp_Inativo_Prova", mObjconexao.conexao);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@pId_Prova", mId_Prova);
+            cmd.Parameters.AddWithValue("@pId", mId_Prova);
             cmd.ExecuteReader(CommandBehavior.SingleRow);
             mObjconexao.desconectar();
         }

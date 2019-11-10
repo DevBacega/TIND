@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmViewQuestao));
             this.gridQuestao = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnNovo = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -41,36 +41,38 @@
             // 
             // gridQuestao
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridQuestao.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.gridQuestao.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.gridQuestao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridQuestao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridQuestao.BackgroundColor = System.Drawing.Color.White;
+            this.gridQuestao.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.gridQuestao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridQuestao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridQuestao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridQuestao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.gridQuestao.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridQuestao.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridQuestao.DefaultCellStyle = dataGridViewCellStyle9;
             this.gridQuestao.DoubleBuffered = true;
+            this.gridQuestao.EnableHeadersVisualStyles = false;
             this.gridQuestao.GridColor = System.Drawing.Color.WhiteSmoke;
             this.gridQuestao.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.gridQuestao.HeaderForeColor = System.Drawing.Color.White;
             this.gridQuestao.Location = new System.Drawing.Point(9, 9);
-            this.gridQuestao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gridQuestao.Margin = new System.Windows.Forms.Padding(2);
             this.gridQuestao.MultiSelect = false;
             this.gridQuestao.Name = "gridQuestao";
             this.gridQuestao.ReadOnly = true;
@@ -103,8 +105,8 @@
             this.btnNovo.IdleFillColor = System.Drawing.Color.White;
             this.btnNovo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnNovo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnNovo.Location = new System.Drawing.Point(560, 358);
-            this.btnNovo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnNovo.Location = new System.Drawing.Point(560, 293);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(110, 45);
             this.btnNovo.TabIndex = 87;
@@ -131,8 +133,8 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(681, 358);
-            this.btnDeletar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnDeletar.Location = new System.Drawing.Point(681, 293);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(110, 45);
             this.btnDeletar.TabIndex = 88;
@@ -158,8 +160,8 @@
             this.btnAtualizar.IdleFillColor = System.Drawing.Color.White;
             this.btnAtualizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnAtualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnAtualizar.Location = new System.Drawing.Point(440, 358);
-            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAtualizar.Location = new System.Drawing.Point(440, 293);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(5);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(110, 45);
             this.btnAtualizar.TabIndex = 89;
@@ -170,15 +172,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 414);
+            this.ClientSize = new System.Drawing.Size(800, 349);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.gridQuestao);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmViewQuestao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmViewQuestao";
             ((System.ComponentModel.ISupportInitialize)(this.gridQuestao)).EndInit();
             this.ResumeLayout(false);

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMateria));
             this.gridMateria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.lblResultado = new System.Windows.Forms.Label();
@@ -51,30 +51,30 @@
             // 
             this.gridMateria.AllowUserToAddRows = false;
             this.gridMateria.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.gridMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridMateria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridMateria.BackgroundColor = System.Drawing.Color.White;
+            this.gridMateria.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.gridMateria.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridMateria.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridMateria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridMateria.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMateria.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridMateria.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridMateria.DoubleBuffered = true;
             this.gridMateria.EnableHeadersVisualStyles = false;
             this.gridMateria.GridColor = System.Drawing.Color.White;
@@ -90,14 +90,14 @@
             this.gridMateria.RowTemplate.Height = 30;
             this.gridMateria.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMateria.Size = new System.Drawing.Size(774, 197);
+            this.gridMateria.Size = new System.Drawing.Size(775, 197);
             this.gridMateria.TabIndex = 76;
             this.gridMateria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelecionaMateria);
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(12, 363);
+            this.lblResultado.Location = new System.Drawing.Point(14, 284);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(65, 13);
             this.lblResultado.TabIndex = 73;
@@ -114,10 +114,10 @@
             this.txtSigla.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtSigla.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtSigla.isPassword = false;
-            this.txtSigla.Location = new System.Drawing.Point(87, 276);
+            this.txtSigla.Location = new System.Drawing.Point(695, 214);
             this.txtSigla.Margin = new System.Windows.Forms.Padding(4);
             this.txtSigla.Name = "txtSigla";
-            this.txtSigla.Size = new System.Drawing.Size(222, 29);
+            this.txtSigla.Size = new System.Drawing.Size(91, 29);
             this.txtSigla.TabIndex = 69;
             this.txtSigla.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -131,10 +131,10 @@
             this.txtMateria.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtMateria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtMateria.isPassword = false;
-            this.txtMateria.Location = new System.Drawing.Point(87, 231);
+            this.txtMateria.Location = new System.Drawing.Point(396, 214);
             this.txtMateria.Margin = new System.Windows.Forms.Padding(4);
             this.txtMateria.Name = "txtMateria";
-            this.txtMateria.Size = new System.Drawing.Size(222, 29);
+            this.txtMateria.Size = new System.Drawing.Size(224, 29);
             this.txtMateria.TabIndex = 67;
             this.txtMateria.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -143,7 +143,7 @@
             this.lblSigla.AutoSize = true;
             this.lblSigla.BackColor = System.Drawing.Color.Transparent;
             this.lblSigla.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSigla.Location = new System.Drawing.Point(21, 278);
+            this.lblSigla.Location = new System.Drawing.Point(629, 217);
             this.lblSigla.Name = "lblSigla";
             this.lblSigla.Size = new System.Drawing.Size(57, 22);
             this.lblSigla.TabIndex = 64;
@@ -154,7 +154,7 @@
             this.lblCurso.AutoSize = true;
             this.lblCurso.BackColor = System.Drawing.Color.Transparent;
             this.lblCurso.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurso.Location = new System.Drawing.Point(323, 233);
+            this.lblCurso.Location = new System.Drawing.Point(13, 217);
             this.lblCurso.Name = "lblCurso";
             this.lblCurso.Size = new System.Drawing.Size(66, 22);
             this.lblCurso.TabIndex = 65;
@@ -165,7 +165,7 @@
             this.lblMateria.AutoSize = true;
             this.lblMateria.BackColor = System.Drawing.Color.Transparent;
             this.lblMateria.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMateria.Location = new System.Drawing.Point(12, 233);
+            this.lblMateria.Location = new System.Drawing.Point(321, 217);
             this.lblMateria.Name = "lblMateria";
             this.lblMateria.Size = new System.Drawing.Size(66, 22);
             this.lblMateria.TabIndex = 66;
@@ -191,7 +191,7 @@
             this.btnSalvar.IdleFillColor = System.Drawing.Color.White;
             this.btnSalvar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnSalvar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnSalvar.Location = new System.Drawing.Point(675, 215);
+            this.btnSalvar.Location = new System.Drawing.Point(436, 254);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(110, 45);
@@ -219,7 +219,7 @@
             this.btnNovo.IdleFillColor = System.Drawing.Color.White;
             this.btnNovo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnNovo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnNovo.Location = new System.Drawing.Point(675, 285);
+            this.btnNovo.Location = new System.Drawing.Point(556, 254);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(110, 45);
@@ -247,7 +247,7 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(675, 358);
+            this.btnDeletar.Location = new System.Drawing.Point(676, 255);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(110, 42);
@@ -268,7 +268,7 @@
             // 
             this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbCurso.FormattingEnabled = true;
-            this.cbCurso.Location = new System.Drawing.Point(388, 232);
+            this.cbCurso.Location = new System.Drawing.Point(88, 214);
             this.cbCurso.Margin = new System.Windows.Forms.Padding(8);
             this.cbCurso.Name = "cbCurso";
             this.cbCurso.Size = new System.Drawing.Size(224, 28);
@@ -280,7 +280,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(797, 414);
+            this.ClientSize = new System.Drawing.Size(800, 311);
             this.Controls.Add(this.cbCurso);
             this.Controls.Add(this.lblIdMateria);
             this.Controls.Add(this.gridMateria);
@@ -295,7 +295,7 @@
             this.Controls.Add(this.lblMateria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMateria";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmMateria";
             this.Load += new System.EventHandler(this.FrmMateria_Load);
             this.Resize += new System.EventHandler(this.Redimensionar);

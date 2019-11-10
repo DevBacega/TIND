@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 
 
@@ -240,6 +239,11 @@ namespace tind4s
         {
             cbMateria.Text = string.Empty;
             PreencherMateria();
+        }
+
+        private void LblNmCurso_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

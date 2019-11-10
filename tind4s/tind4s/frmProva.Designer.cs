@@ -28,89 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmProva));
-            this.griProva = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnEditar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.dgvProva = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnNovo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
-            ((System.ComponentModel.ISupportInitialize)(this.griProva)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProva)).BeginInit();
             this.SuspendLayout();
             // 
-            // griProva
+            // dgvProva
             // 
-            this.griProva.AllowUserToAddRows = false;
-            this.griProva.AllowUserToDeleteRows = false;
-            this.griProva.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.griProva.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.griProva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.griProva.BackgroundColor = System.Drawing.Color.White;
-            this.griProva.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.griProva.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.griProva.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.griProva.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.griProva.DefaultCellStyle = dataGridViewCellStyle6;
-            this.griProva.DoubleBuffered = true;
-            this.griProva.EnableHeadersVisualStyles = false;
-            this.griProva.GridColor = System.Drawing.Color.White;
-            this.griProva.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.griProva.HeaderForeColor = System.Drawing.Color.White;
-            this.griProva.Location = new System.Drawing.Point(15, 11);
-            this.griProva.Margin = new System.Windows.Forms.Padding(2);
-            this.griProva.Name = "griProva";
-            this.griProva.ReadOnly = true;
-            this.griProva.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.griProva.RowHeadersVisible = false;
-            this.griProva.RowTemplate.DividerHeight = 1;
-            this.griProva.RowTemplate.Height = 30;
-            this.griProva.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.griProva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.griProva.Size = new System.Drawing.Size(774, 373);
-            this.griProva.TabIndex = 77;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.ActiveBorderThickness = 1;
-            this.btnEditar.ActiveCornerRadius = 20;
-            this.btnEditar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.ActiveForecolor = System.Drawing.Color.Silver;
-            this.btnEditar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.BackColor = System.Drawing.Color.White;
-            this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.ButtonText = "Editar";
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.IdleBorderThickness = 1;
-            this.btnEditar.IdleCornerRadius = 20;
-            this.btnEditar.IdleFillColor = System.Drawing.Color.White;
-            this.btnEditar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnEditar.Location = new System.Drawing.Point(439, 391);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(5);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(110, 45);
-            this.btnEditar.TabIndex = 75;
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dgvProva.AllowUserToAddRows = false;
+            this.dgvProva.AllowUserToDeleteRows = false;
+            this.dgvProva.AllowUserToResizeColumns = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvProva.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProva.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProva.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvProva.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProva.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvProva.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvProva.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvProva.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProva.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProva.DoubleBuffered = true;
+            this.dgvProva.EnableHeadersVisualStyles = false;
+            this.dgvProva.GridColor = System.Drawing.Color.White;
+            this.dgvProva.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.dgvProva.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvProva.Location = new System.Drawing.Point(15, 11);
+            this.dgvProva.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvProva.Name = "dgvProva";
+            this.dgvProva.ReadOnly = true;
+            this.dgvProva.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvProva.RowHeadersVisible = false;
+            this.dgvProva.RowTemplate.DividerHeight = 1;
+            this.dgvProva.RowTemplate.Height = 30;
+            this.dgvProva.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProva.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProva.Size = new System.Drawing.Size(774, 373);
+            this.dgvProva.TabIndex = 77;
             // 
             // btnNovo
             // 
@@ -132,10 +105,10 @@
             this.btnNovo.IdleFillColor = System.Drawing.Color.White;
             this.btnNovo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnNovo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnNovo.Location = new System.Drawing.Point(679, 391);
+            this.btnNovo.Location = new System.Drawing.Point(679, 394);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(110, 45);
+            this.btnNovo.Size = new System.Drawing.Size(110, 42);
             this.btnNovo.TabIndex = 73;
             this.btnNovo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
@@ -160,36 +133,36 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(559, 391);
+            this.btnDeletar.Location = new System.Drawing.Point(559, 394);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(110, 42);
             this.btnDeletar.TabIndex = 74;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
             // frmProva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.griProva);
-            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.dgvProva);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnDeletar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProva";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "frmProva";
-            ((System.ComponentModel.ISupportInitialize)(this.griProva)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProva)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuThinButton2 btnEditar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNovo;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDeletar;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid griProva;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProva;
     }
 }

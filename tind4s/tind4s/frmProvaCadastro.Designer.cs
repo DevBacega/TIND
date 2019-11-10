@@ -42,6 +42,7 @@
             this.btnExcluirMateria = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dgvMateria = new System.Windows.Forms.DataGridView();
+            this.btnSair = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -160,9 +161,9 @@
             this.btnInserirMateria.ActiveBorderThickness = 1;
             this.btnInserirMateria.ActiveCornerRadius = 20;
             this.btnInserirMateria.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnInserirMateria.ActiveForecolor = System.Drawing.Color.Silver;
+            this.btnInserirMateria.ActiveForecolor = System.Drawing.Color.White;
             this.btnInserirMateria.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnInserirMateria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInserirMateria.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInserirMateria.BackColor = System.Drawing.Color.White;
             this.btnInserirMateria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnInserirMateria.BackgroundImage")));
             this.btnInserirMateria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -188,9 +189,8 @@
             this.btnExcluirMateria.ActiveBorderThickness = 1;
             this.btnExcluirMateria.ActiveCornerRadius = 20;
             this.btnExcluirMateria.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnExcluirMateria.ActiveForecolor = System.Drawing.Color.Silver;
+            this.btnExcluirMateria.ActiveForecolor = System.Drawing.Color.White;
             this.btnExcluirMateria.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnExcluirMateria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcluirMateria.BackColor = System.Drawing.Color.White;
             this.btnExcluirMateria.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcluirMateria.BackgroundImage")));
             this.btnExcluirMateria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -203,21 +203,21 @@
             this.btnExcluirMateria.IdleFillColor = System.Drawing.Color.White;
             this.btnExcluirMateria.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnExcluirMateria.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnExcluirMateria.Location = new System.Drawing.Point(417, 272);
+            this.btnExcluirMateria.Location = new System.Drawing.Point(332, 194);
             this.btnExcluirMateria.Margin = new System.Windows.Forms.Padding(5);
             this.btnExcluirMateria.Name = "btnExcluirMateria";
-            this.btnExcluirMateria.Size = new System.Drawing.Size(73, 36);
+            this.btnExcluirMateria.Size = new System.Drawing.Size(163, 36);
             this.btnExcluirMateria.TabIndex = 91;
             this.btnExcluirMateria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnExcluirMateria.Click += new System.EventHandler(this.BtnExcluirMateria_Click);
             // 
             // bunifuThinButton21
             // 
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Silver;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.bunifuThinButton21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -230,7 +230,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(12, 192);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(9, 194);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(305, 78);
@@ -256,8 +256,35 @@
             this.dgvMateria.ReadOnly = true;
             this.dgvMateria.RowHeadersVisible = false;
             this.dgvMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMateria.Size = new System.Drawing.Size(165, 252);
+            this.dgvMateria.Size = new System.Drawing.Size(165, 174);
             this.dgvMateria.TabIndex = 93;
+            // 
+            // btnSair
+            // 
+            this.btnSair.ActiveBorderThickness = 1;
+            this.btnSair.ActiveCornerRadius = 20;
+            this.btnSair.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSair.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.BackColor = System.Drawing.Color.White;
+            this.btnSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSair.BackgroundImage")));
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSair.ButtonText = "Sair";
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.IdleBorderThickness = 1;
+            this.btnSair.IdleCornerRadius = 20;
+            this.btnSair.IdleFillColor = System.Drawing.Color.White;
+            this.btnSair.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.Location = new System.Drawing.Point(424, 236);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(73, 36);
+            this.btnSair.TabIndex = 94;
+            this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
             // frmProvaCadastro
             // 
@@ -265,7 +292,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(509, 313);
+            this.ClientSize = new System.Drawing.Size(509, 274);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.dgvMateria);
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.btnExcluirMateria);
@@ -281,7 +309,7 @@
             this.Controls.Add(this.lblCurso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmProvaCadastro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmProvaCadastro";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).EndInit();
             this.ResumeLayout(false);
@@ -304,5 +332,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnExcluirMateria;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.DataGridView dgvMateria;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSair;
     }
 }

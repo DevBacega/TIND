@@ -7,7 +7,3 @@ begin
     SELECT IDENT_CURRENT('TB_Prova') as 'ID'
 end;
 
-
-
-
-

@@ -5,5 +5,5 @@ Create procedure sp_Select_Prova
 as
 begin
 	Select Id_Prova, Nm_Prova, St_Prova, Id_Prontuario
-	from TB_Prova
+	from TB_Prova where St_Prova = 1;
 end;

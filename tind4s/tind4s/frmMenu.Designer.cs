@@ -38,7 +38,6 @@
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnFechar = new System.Windows.Forms.Button();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.MenuConteudo = new System.Windows.Forms.Panel();
@@ -49,7 +48,7 @@
             // 
             // pnlMenu
             // 
-            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(81)))), ((int)(((byte)(123)))));
+            this.pnlMenu.BackColor = System.Drawing.Color.DodgerBlue;
             this.pnlMenu.Controls.Add(this.btnCurso);
             this.pnlMenu.Controls.Add(this.bunifuFlatButton1);
             this.pnlMenu.Controls.Add(this.bunifuFlatButton3);
@@ -241,26 +240,25 @@
             // imgLogo
             // 
             this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
-            this.imgLogo.Location = new System.Drawing.Point(1, 0);
+            this.imgLogo.Location = new System.Drawing.Point(6, 9);
             this.imgLogo.Margin = new System.Windows.Forms.Padding(2);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(118, 70);
+            this.imgLogo.Size = new System.Drawing.Size(168, 95);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogo.TabIndex = 1;
             this.imgLogo.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnFechar);
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.lblTitulo);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnFechar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(183, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 67);
+            this.panel1.Size = new System.Drawing.Size(800, 63);
             this.panel1.TabIndex = 1;
             // 
             // button2
@@ -269,7 +267,7 @@
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(776, 3);
+            this.button2.Location = new System.Drawing.Point(729, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(31, 23);
             this.button2.TabIndex = 34;
@@ -277,27 +275,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(813, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(31, 23);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "[ ]";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // btnFechar
             // 
             this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFechar.BackColor = System.Drawing.Color.White;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(850, 3);
+            this.btnFechar.Location = new System.Drawing.Point(766, 3);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(31, 23);
             this.btnFechar.TabIndex = 32;
@@ -310,13 +294,14 @@
             this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitulo.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
-            this.lblTitulo.Location = new System.Drawing.Point(352, 16);
+            this.lblTitulo.Location = new System.Drawing.Point(297, 18);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(76, 35);
+            this.lblTitulo.Size = new System.Drawing.Size(90, 28);
             this.lblTitulo.TabIndex = 31;
             this.lblTitulo.Text = "titulo";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MenuConteudo
             // 
@@ -324,11 +309,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MenuConteudo.AutoSize = true;
-            this.MenuConteudo.BackColor = System.Drawing.Color.Black;
-            this.MenuConteudo.Location = new System.Drawing.Point(183, 67);
+            this.MenuConteudo.BackColor = System.Drawing.Color.White;
+            this.MenuConteudo.Location = new System.Drawing.Point(183, 63);
             this.MenuConteudo.Margin = new System.Windows.Forms.Padding(2);
             this.MenuConteudo.Name = "MenuConteudo";
-            this.MenuConteudo.Size = new System.Drawing.Size(884, 453);
+            this.MenuConteudo.Size = new System.Drawing.Size(800, 453);
             this.MenuConteudo.TabIndex = 2;
             // 
             // frmMenu
@@ -336,7 +321,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 520);
+            this.ClientSize = new System.Drawing.Size(983, 520);
             this.Controls.Add(this.MenuConteudo);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlMenu);
@@ -367,7 +352,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnCurso;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Button btnFechar;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         public System.Windows.Forms.Panel MenuConteudo;
     }

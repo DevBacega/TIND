@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCurso));
             this.gridCurso = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.lblResultado = new System.Windows.Forms.Label();
@@ -49,30 +49,30 @@
             // 
             this.gridCurso.AllowUserToAddRows = false;
             this.gridCurso.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.gridCurso.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridCurso.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridCurso.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridCurso.BackgroundColor = System.Drawing.Color.White;
+            this.gridCurso.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.gridCurso.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridCurso.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridCurso.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridCurso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridCurso.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridCurso.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridCurso.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridCurso.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridCurso.DoubleBuffered = true;
             this.gridCurso.EnableHeadersVisualStyles = false;
             this.gridCurso.GridColor = System.Drawing.Color.WhiteSmoke;
@@ -88,13 +88,13 @@
             this.gridCurso.RowTemplate.Height = 30;
             this.gridCurso.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.gridCurso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridCurso.Size = new System.Drawing.Size(779, 197);
+            this.gridCurso.Size = new System.Drawing.Size(780, 197);
             this.gridCurso.TabIndex = 75;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(12, 392);
+            this.lblResultado.Location = new System.Drawing.Point(6, 248);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(65, 13);
             this.lblResultado.TabIndex = 73;
@@ -120,7 +120,7 @@
             this.btnSalvar.IdleFillColor = System.Drawing.Color.White;
             this.btnSalvar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnSalvar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnSalvar.Location = new System.Drawing.Point(670, 219);
+            this.btnSalvar.Location = new System.Drawing.Point(439, 213);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(110, 45);
@@ -148,7 +148,7 @@
             this.btnNovo.IdleFillColor = System.Drawing.Color.White;
             this.btnNovo.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnNovo.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnNovo.Location = new System.Drawing.Point(670, 283);
+            this.btnNovo.Location = new System.Drawing.Point(559, 213);
             this.btnNovo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(110, 45);
@@ -176,7 +176,7 @@
             this.btnDeletar.IdleFillColor = System.Drawing.Color.White;
             this.btnDeletar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnDeletar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnDeletar.Location = new System.Drawing.Point(670, 349);
+            this.btnDeletar.Location = new System.Drawing.Point(679, 213);
             this.btnDeletar.Margin = new System.Windows.Forms.Padding(5);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(110, 45);
@@ -193,10 +193,10 @@
             this.txtAbrev.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtAbrev.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAbrev.isPassword = false;
-            this.txtAbrev.Location = new System.Drawing.Point(420, 218);
+            this.txtAbrev.Location = new System.Drawing.Point(346, 222);
             this.txtAbrev.Margin = new System.Windows.Forms.Padding(4);
             this.txtAbrev.Name = "txtAbrev";
-            this.txtAbrev.Size = new System.Drawing.Size(216, 29);
+            this.txtAbrev.Size = new System.Drawing.Size(84, 29);
             this.txtAbrev.TabIndex = 69;
             this.txtAbrev.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -210,10 +210,10 @@
             this.txtCurso.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtCurso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCurso.isPassword = false;
-            this.txtCurso.Location = new System.Drawing.Point(102, 219);
+            this.txtCurso.Location = new System.Drawing.Point(102, 222);
             this.txtCurso.Margin = new System.Windows.Forms.Padding(4);
             this.txtCurso.Name = "txtCurso";
-            this.txtCurso.Size = new System.Drawing.Size(217, 28);
+            this.txtCurso.Size = new System.Drawing.Size(173, 28);
             this.txtCurso.TabIndex = 67;
             this.txtCurso.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -222,7 +222,7 @@
             this.lblAbrev.AutoSize = true;
             this.lblAbrev.BackColor = System.Drawing.Color.Transparent;
             this.lblAbrev.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAbrev.Location = new System.Drawing.Point(338, 223);
+            this.lblAbrev.Location = new System.Drawing.Point(282, 225);
             this.lblAbrev.Name = "lblAbrev";
             this.lblAbrev.Size = new System.Drawing.Size(57, 22);
             this.lblAbrev.TabIndex = 64;
@@ -233,7 +233,7 @@
             this.lblNmCurso.AutoSize = true;
             this.lblNmCurso.BackColor = System.Drawing.Color.Transparent;
             this.lblNmCurso.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNmCurso.Location = new System.Drawing.Point(16, 223);
+            this.lblNmCurso.Location = new System.Drawing.Point(31, 225);
             this.lblNmCurso.Name = "lblNmCurso";
             this.lblNmCurso.Size = new System.Drawing.Size(66, 22);
             this.lblNmCurso.TabIndex = 66;
@@ -254,7 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(797, 414);
+            this.ClientSize = new System.Drawing.Size(800, 267);
             this.Controls.Add(this.lblId_Curso);
             this.Controls.Add(this.gridCurso);
             this.Controls.Add(this.lblResultado);

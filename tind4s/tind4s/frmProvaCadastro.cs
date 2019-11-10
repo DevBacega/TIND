@@ -107,5 +107,18 @@ namespace tind4s
                 }
             }
         }
+
+        private void BtnExcluirMateria_Click(object sender, EventArgs e)
+        {
+            int row = dgvMateria.CurrentCell.RowIndex;
+            dgvMateria.Rows.RemoveAt(row);
+            dgvMateria.Refresh();
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            this.Close();
+        }
     }
 }
