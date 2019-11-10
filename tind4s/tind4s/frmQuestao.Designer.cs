@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuestao));
             this.lblId_Curso = new System.Windows.Forms.Label();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.lblaaa = new System.Windows.Forms.Label();
             this.lblNmCurso = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +37,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboxMateria = new System.Windows.Forms.ComboBox();
             this.btnSalvar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.chk1 = new System.Windows.Forms.CheckBox();
             this.chk2 = new System.Windows.Forms.CheckBox();
@@ -54,6 +51,16 @@
             this.txtAlternativa5 = new System.Windows.Forms.RichTextBox();
             this.txtJustificativa = new System.Windows.Forms.RichTextBox();
             this.lblId_Questao = new System.Windows.Forms.Label();
+            this.cbMateria = new System.Windows.Forms.ComboBox();
+            this.lblMateria = new System.Windows.Forms.Label();
+            this.cbCurso = new System.Windows.Forms.ComboBox();
+            this.lblCurso = new System.Windows.Forms.Label();
+            this.btnVoltar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.lblId_Alternativa1 = new System.Windows.Forms.Label();
+            this.lblId_Alternativa2 = new System.Windows.Forms.Label();
+            this.lblId_Alternativa3 = new System.Windows.Forms.Label();
+            this.lblId_Alternativa4 = new System.Windows.Forms.Label();
+            this.lblId_Alternativa5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblId_Curso
@@ -63,28 +70,6 @@
             this.lblId_Curso.Name = "lblId_Curso";
             this.lblId_Curso.Size = new System.Drawing.Size(0, 17);
             this.lblId_Curso.TabIndex = 86;
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(25, 762);
-            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(86, 17);
-            this.lblResultado.TabIndex = 84;
-            this.lblResultado.Text = "lblResultado";
-            // 
-            // lblaaa
-            // 
-            this.lblaaa.AutoSize = true;
-            this.lblaaa.BackColor = System.Drawing.Color.Transparent;
-            this.lblaaa.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblaaa.Location = new System.Drawing.Point(44, 149);
-            this.lblaaa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblaaa.Name = "lblaaa";
-            this.lblaaa.Size = new System.Drawing.Size(97, 27);
-            this.lblaaa.TabIndex = 77;
-            this.lblaaa.Text = "Materia:";
             // 
             // lblNmCurso
             // 
@@ -103,7 +88,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 225);
+            this.label1.Location = new System.Drawing.Point(22, 213);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 27);
@@ -115,7 +100,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 310);
+            this.label2.Location = new System.Drawing.Point(546, 214);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 27);
@@ -127,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 388);
+            this.label3.Location = new System.Drawing.Point(22, 310);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 27);
@@ -139,7 +124,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 474);
+            this.label4.Location = new System.Drawing.Point(545, 306);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(151, 27);
@@ -151,7 +136,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 555);
+            this.label5.Location = new System.Drawing.Point(22, 415);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(151, 27);
@@ -163,20 +148,12 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 628);
+            this.label6.Location = new System.Drawing.Point(550, 428);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(142, 27);
             this.label6.TabIndex = 97;
             this.label6.Text = "Justificativa:";
-            // 
-            // cboxMateria
-            // 
-            this.cboxMateria.FormattingEnabled = true;
-            this.cboxMateria.Location = new System.Drawing.Point(174, 150);
-            this.cboxMateria.Name = "cboxMateria";
-            this.cboxMateria.Size = new System.Drawing.Size(268, 24);
-            this.cboxMateria.TabIndex = 99;
             // 
             // btnSalvar
             // 
@@ -198,7 +175,7 @@
             this.btnSalvar.IdleFillColor = System.Drawing.Color.White;
             this.btnSalvar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnSalvar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.btnSalvar.Location = new System.Drawing.Point(952, 724);
+            this.btnSalvar.Location = new System.Drawing.Point(742, 490);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(147, 55);
@@ -209,7 +186,7 @@
             // chk1
             // 
             this.chk1.AutoSize = true;
-            this.chk1.Location = new System.Drawing.Point(1005, 231);
+            this.chk1.Location = new System.Drawing.Point(90, 243);
             this.chk1.Name = "chk1";
             this.chk1.Size = new System.Drawing.Size(77, 21);
             this.chk1.TabIndex = 100;
@@ -220,7 +197,7 @@
             // chk2
             // 
             this.chk2.AutoSize = true;
-            this.chk2.Location = new System.Drawing.Point(1003, 310);
+            this.chk2.Location = new System.Drawing.Point(616, 244);
             this.chk2.Name = "chk2";
             this.chk2.Size = new System.Drawing.Size(77, 21);
             this.chk2.TabIndex = 101;
@@ -231,7 +208,7 @@
             // chk3
             // 
             this.chk3.AutoSize = true;
-            this.chk3.Location = new System.Drawing.Point(1003, 394);
+            this.chk3.Location = new System.Drawing.Point(87, 342);
             this.chk3.Name = "chk3";
             this.chk3.Size = new System.Drawing.Size(77, 21);
             this.chk3.TabIndex = 102;
@@ -242,7 +219,7 @@
             // chk4
             // 
             this.chk4.AutoSize = true;
-            this.chk4.Location = new System.Drawing.Point(1005, 481);
+            this.chk4.Location = new System.Drawing.Point(615, 335);
             this.chk4.Name = "chk4";
             this.chk4.Size = new System.Drawing.Size(77, 21);
             this.chk4.TabIndex = 103;
@@ -253,7 +230,7 @@
             // chk5
             // 
             this.chk5.AutoSize = true;
-            this.chk5.Location = new System.Drawing.Point(1003, 562);
+            this.chk5.Location = new System.Drawing.Point(96, 445);
             this.chk5.Name = "chk5";
             this.chk5.Size = new System.Drawing.Size(77, 21);
             this.chk5.TabIndex = 104;
@@ -275,52 +252,52 @@
             this.txtAlternativa1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtAlternativa1.Location = new System.Drawing.Point(178, 211);
             this.txtAlternativa1.Name = "txtAlternativa1";
-            this.txtAlternativa1.Size = new System.Drawing.Size(817, 60);
+            this.txtAlternativa1.Size = new System.Drawing.Size(357, 60);
             this.txtAlternativa1.TabIndex = 106;
             this.txtAlternativa1.Text = "";
             // 
             // txtAlternativa2
             // 
             this.txtAlternativa2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAlternativa2.Location = new System.Drawing.Point(178, 294);
+            this.txtAlternativa2.Location = new System.Drawing.Point(700, 211);
             this.txtAlternativa2.Name = "txtAlternativa2";
-            this.txtAlternativa2.Size = new System.Drawing.Size(817, 60);
+            this.txtAlternativa2.Size = new System.Drawing.Size(357, 60);
             this.txtAlternativa2.TabIndex = 107;
             this.txtAlternativa2.Text = "";
             // 
             // txtAlternativa3
             // 
             this.txtAlternativa3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAlternativa3.Location = new System.Drawing.Point(178, 375);
+            this.txtAlternativa3.Location = new System.Drawing.Point(177, 307);
             this.txtAlternativa3.Name = "txtAlternativa3";
-            this.txtAlternativa3.Size = new System.Drawing.Size(817, 60);
+            this.txtAlternativa3.Size = new System.Drawing.Size(357, 60);
             this.txtAlternativa3.TabIndex = 108;
             this.txtAlternativa3.Text = "";
             // 
             // txtAlternativa4
             // 
             this.txtAlternativa4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAlternativa4.Location = new System.Drawing.Point(178, 457);
+            this.txtAlternativa4.Location = new System.Drawing.Point(700, 303);
             this.txtAlternativa4.Name = "txtAlternativa4";
-            this.txtAlternativa4.Size = new System.Drawing.Size(817, 60);
+            this.txtAlternativa4.Size = new System.Drawing.Size(357, 60);
             this.txtAlternativa4.TabIndex = 109;
             this.txtAlternativa4.Text = "";
             // 
             // txtAlternativa5
             // 
             this.txtAlternativa5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAlternativa5.Location = new System.Drawing.Point(178, 539);
+            this.txtAlternativa5.Location = new System.Drawing.Point(177, 412);
             this.txtAlternativa5.Name = "txtAlternativa5";
-            this.txtAlternativa5.Size = new System.Drawing.Size(817, 60);
+            this.txtAlternativa5.Size = new System.Drawing.Size(357, 60);
             this.txtAlternativa5.TabIndex = 110;
             this.txtAlternativa5.Text = "";
             // 
             // txtJustificativa
             // 
             this.txtJustificativa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtJustificativa.Location = new System.Drawing.Point(178, 614);
+            this.txtJustificativa.Location = new System.Drawing.Point(706, 414);
             this.txtJustificativa.Name = "txtJustificativa";
-            this.txtJustificativa.Size = new System.Drawing.Size(817, 60);
+            this.txtJustificativa.Size = new System.Drawing.Size(357, 60);
             this.txtJustificativa.TabIndex = 111;
             this.txtJustificativa.Text = "";
             // 
@@ -332,12 +309,137 @@
             this.lblId_Questao.Size = new System.Drawing.Size(0, 17);
             this.lblId_Questao.TabIndex = 112;
             // 
+            // cbMateria
+            // 
+            this.cbMateria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbMateria.FormattingEnabled = true;
+            this.cbMateria.Location = new System.Drawing.Point(606, 148);
+            this.cbMateria.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.cbMateria.Name = "cbMateria";
+            this.cbMateria.Size = new System.Drawing.Size(295, 33);
+            this.cbMateria.TabIndex = 116;
+            // 
+            // lblMateria
+            // 
+            this.lblMateria.AutoSize = true;
+            this.lblMateria.BackColor = System.Drawing.Color.Transparent;
+            this.lblMateria.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMateria.Location = new System.Drawing.Point(495, 150);
+            this.lblMateria.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMateria.Name = "lblMateria";
+            this.lblMateria.Size = new System.Drawing.Size(97, 27);
+            this.lblMateria.TabIndex = 115;
+            this.lblMateria.Text = "Materia:";
+            // 
+            // cbCurso
+            // 
+            this.cbCurso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbCurso.FormattingEnabled = true;
+            this.cbCurso.Location = new System.Drawing.Point(178, 146);
+            this.cbCurso.Margin = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.cbCurso.Name = "cbCurso";
+            this.cbCurso.Size = new System.Drawing.Size(295, 33);
+            this.cbCurso.TabIndex = 114;
+            this.cbCurso.SelectionChangeCommitted += new System.EventHandler(this.cbCurso_SelectedIndexChanged);
+            // 
+            // lblCurso
+            // 
+            this.lblCurso.AutoSize = true;
+            this.lblCurso.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurso.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurso.Location = new System.Drawing.Point(80, 154);
+            this.lblCurso.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCurso.Name = "lblCurso";
+            this.lblCurso.Size = new System.Drawing.Size(83, 27);
+            this.lblCurso.TabIndex = 113;
+            this.lblCurso.Text = "Curso:";
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.ActiveBorderThickness = 1;
+            this.btnVoltar.ActiveCornerRadius = 20;
+            this.btnVoltar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnVoltar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnVoltar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnVoltar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVoltar.BackgroundImage")));
+            this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVoltar.ButtonText = "Voltar";
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVoltar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnVoltar.IdleBorderThickness = 1;
+            this.btnVoltar.IdleCornerRadius = 20;
+            this.btnVoltar.IdleFillColor = System.Drawing.Color.White;
+            this.btnVoltar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnVoltar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnVoltar.Location = new System.Drawing.Point(935, 490);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(147, 55);
+            this.btnVoltar.TabIndex = 117;
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // lblId_Alternativa1
+            // 
+            this.lblId_Alternativa1.AutoSize = true;
+            this.lblId_Alternativa1.Location = new System.Drawing.Point(25, 261);
+            this.lblId_Alternativa1.Name = "lblId_Alternativa1";
+            this.lblId_Alternativa1.Size = new System.Drawing.Size(0, 17);
+            this.lblId_Alternativa1.TabIndex = 118;
+            // 
+            // lblId_Alternativa2
+            // 
+            this.lblId_Alternativa2.AutoSize = true;
+            this.lblId_Alternativa2.Location = new System.Drawing.Point(25, 337);
+            this.lblId_Alternativa2.Name = "lblId_Alternativa2";
+            this.lblId_Alternativa2.Size = new System.Drawing.Size(0, 17);
+            this.lblId_Alternativa2.TabIndex = 119;
+            // 
+            // lblId_Alternativa3
+            // 
+            this.lblId_Alternativa3.AutoSize = true;
+            this.lblId_Alternativa3.Location = new System.Drawing.Point(25, 415);
+            this.lblId_Alternativa3.Name = "lblId_Alternativa3";
+            this.lblId_Alternativa3.Size = new System.Drawing.Size(0, 17);
+            this.lblId_Alternativa3.TabIndex = 120;
+            // 
+            // lblId_Alternativa4
+            // 
+            this.lblId_Alternativa4.AutoSize = true;
+            this.lblId_Alternativa4.Location = new System.Drawing.Point(25, 501);
+            this.lblId_Alternativa4.Name = "lblId_Alternativa4";
+            this.lblId_Alternativa4.Size = new System.Drawing.Size(0, 17);
+            this.lblId_Alternativa4.TabIndex = 121;
+            // 
+            // lblId_Alternativa5
+            // 
+            this.lblId_Alternativa5.AutoSize = true;
+            this.lblId_Alternativa5.Location = new System.Drawing.Point(25, 582);
+            this.lblId_Alternativa5.Name = "lblId_Alternativa5";
+            this.lblId_Alternativa5.Size = new System.Drawing.Size(0, 17);
+            this.lblId_Alternativa5.TabIndex = 122;
+            // 
             // frmQuestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1115, 793);
+            this.ClientSize = new System.Drawing.Size(1115, 560);
+            this.Controls.Add(this.lblId_Alternativa5);
+            this.Controls.Add(this.lblId_Alternativa4);
+            this.Controls.Add(this.lblId_Alternativa3);
+            this.Controls.Add(this.lblId_Alternativa2);
+            this.Controls.Add(this.lblId_Alternativa1);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.cbMateria);
+            this.Controls.Add(this.lblMateria);
+            this.Controls.Add(this.cbCurso);
+            this.Controls.Add(this.lblCurso);
             this.Controls.Add(this.lblId_Questao);
             this.Controls.Add(this.txtJustificativa);
             this.Controls.Add(this.txtAlternativa5);
@@ -351,7 +453,6 @@
             this.Controls.Add(this.chk3);
             this.Controls.Add(this.chk2);
             this.Controls.Add(this.chk1);
-            this.Controls.Add(this.cboxMateria);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -359,13 +460,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblId_Curso);
-            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.lblaaa);
             this.Controls.Add(this.lblNmCurso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmQuestao";
-            this.Text = "frmQuestao";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,8 +473,6 @@
         #endregion
 
         public System.Windows.Forms.Label lblId_Curso;
-        public System.Windows.Forms.Label lblResultado;
-        public System.Windows.Forms.Label lblaaa;
         public System.Windows.Forms.Label lblNmCurso;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
@@ -383,7 +480,6 @@
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label6;
-        public System.Windows.Forms.ComboBox cboxMateria;
         public Bunifu.Framework.UI.BunifuThinButton2 btnSalvar;
         public System.Windows.Forms.CheckBox chk1;
         public System.Windows.Forms.CheckBox chk2;
@@ -397,7 +493,17 @@
         public System.Windows.Forms.RichTextBox txtAlternativa4;
         public System.Windows.Forms.RichTextBox txtAlternativa5;
         public System.Windows.Forms.RichTextBox txtJustificativa;
-        private System.Windows.Forms.Label lblId_Questao;
+        public Bunifu.Framework.UI.BunifuThinButton2 btnVoltar;
+        public System.Windows.Forms.Label lblId_Questao;
+        public System.Windows.Forms.ComboBox cbMateria;
+        public System.Windows.Forms.Label lblMateria;
+        public System.Windows.Forms.ComboBox cbCurso;
+        public System.Windows.Forms.Label lblCurso;
+        public System.Windows.Forms.Label lblId_Alternativa1;
+        public System.Windows.Forms.Label lblId_Alternativa2;
+        public System.Windows.Forms.Label lblId_Alternativa3;
+        public System.Windows.Forms.Label lblId_Alternativa4;
+        public System.Windows.Forms.Label lblId_Alternativa5;
 
     }
 }

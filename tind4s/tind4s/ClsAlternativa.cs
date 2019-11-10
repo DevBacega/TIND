@@ -14,6 +14,8 @@ namespace tind4s
         private int mSt_Verificacao;
         private string mDs_Alternativa;
 
+        public DataSet DSAlternariva { get; set; }
+
         public int Id_Questao
         {
             get { return mId_Questao; }//retorna o valor da variavel  
@@ -56,15 +58,23 @@ namespace tind4s
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@pId_Alternativas", mId_Alternativas);
             cmd.Parameters.AddWithValue("@pDs_Alternativa", mDs_Alternativa);
-            cmd.Parameters.AddWithValue("@pVerificacao", mSt_Verificacao);
-            cmd.Parameters.AddWithValue("@pId_Questao", mId_Questao);
+            cmd.Parameters.AddWithValue("@pSt_Verificacao", mSt_Verificacao);
             cmd.ExecuteReader(CommandBehavior.SingleRow);
             conexao.desconectar();
         }
 
         public override void Selecionar()
         {
-            throw new NotImplementedException();
+            ClsConexao conexao = new ClsConexao();
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_SelectWr_Alternativa", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId", mId_Questao);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet DSU = new DataSet();
+            da.Fill(DSU);
+            DSAlternariva = DSU;
+            conexao.desconectar();
         }
 
         public override void Desativa()

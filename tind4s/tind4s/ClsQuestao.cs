@@ -12,11 +12,18 @@ namespace tind4s
         private int mId_Questao;
         private int mId_Prontuario;
         private int mId_Materia;
+        private int mId_Curso;
         private int mSt_Pergunta;
         private string mDs_Pergunta;
         private string mDs_Justificativa;
 
         public DataSet DSQuestao { get; set; }
+
+        public int Id_Curso
+        {
+            get { return mId_Curso; }//retorna o valor da variavel  
+            set { mId_Curso = value; }//recebe um valor para variavel
+        }
 
         public int Id_Questao
         {
@@ -60,7 +67,7 @@ namespace tind4s
             cmd.Parameters.AddWithValue("@pDs_Justificativa",mDs_Justificativa);
             cmd.Parameters.AddWithValue("@pId_Materia      ",mId_Materia );
             cmd.Parameters.AddWithValue("@pId_Prontuario   ",mId_Prontuario);
-            cmd.Parameters.AddWithValue("@pSt_Pergunta     ",mSt_Pergunta);
+            cmd.Parameters.AddWithValue("@pSt_Pergunta     ", 1);
             cmd.ExecuteReader(CommandBehavior.SingleRow);
             conexao.desconectar();
 
@@ -121,5 +128,18 @@ namespace tind4s
             conexao.desconectar();
         }
 
+        public void SelecionaCursoMateria()
+        {
+            ClsConexao conexao = new ClsConexao();
+            conexao.conectar();
+            SqlCommand cmd = new SqlCommand("Sp_Selecionar_Curso_Materia", conexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pIdCurso", mId_Curso);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet DSU = new DataSet();
+            da.Fill(DSU);
+            DSQuestao = DSU;
+            conexao.desconectar();
+        }
     }
 }

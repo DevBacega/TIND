@@ -35,6 +35,7 @@
             this.gridQuestao = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnNovo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAtualizar = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.gridQuestao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.gridQuestao.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridQuestao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridQuestao.BackgroundColor = System.Drawing.Color.Black;
+            this.gridQuestao.BackgroundColor = System.Drawing.Color.White;
             this.gridQuestao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridQuestao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridQuestao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -138,12 +139,41 @@
             this.btnDeletar.TabIndex = 88;
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.ActiveBorderThickness = 1;
+            this.btnAtualizar.ActiveCornerRadius = 20;
+            this.btnAtualizar.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnAtualizar.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAtualizar.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnAtualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAtualizar.BackColor = System.Drawing.Color.White;
+            this.btnAtualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.BackgroundImage")));
+            this.btnAtualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtualizar.ButtonText = "Atualizar";
+            this.btnAtualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnAtualizar.IdleBorderThickness = 1;
+            this.btnAtualizar.IdleCornerRadius = 20;
+            this.btnAtualizar.IdleFillColor = System.Drawing.Color.White;
+            this.btnAtualizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnAtualizar.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnAtualizar.Location = new System.Drawing.Point(586, 440);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(147, 55);
+            this.btnAtualizar.TabIndex = 89;
+            this.btnAtualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // frmViewQuestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1067, 510);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.gridQuestao);
@@ -160,5 +190,6 @@
         private Bunifu.Framework.UI.BunifuCustomDataGrid gridQuestao;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNovo;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDeletar;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAtualizar;
     }
 }

@@ -119,3 +119,8 @@ D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V3\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmProva.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmProvaCadastro.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
+C:\Users\lipex\OneDrive\Área de Trabalho\PROJETO\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
