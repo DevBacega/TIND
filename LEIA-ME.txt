@@ -1,3 +1,5 @@
+///PROJETO EM ANDAMENTO///
+
 Para rodar o programa primeiro entre na pasta BANCO e execute os seguintes arquivos:
 
 - SCRIPT EXECUTA BANCO v5.SQL
