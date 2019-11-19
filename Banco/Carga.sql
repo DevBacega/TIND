@@ -41,12 +41,3 @@ exec sp_Ins_Alternativas 'Homing Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hercu Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hinner Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hiper Text Transfer Protocol Secure',0,4;
-
-
-
-
-
-
-
-
-select * from TB_Usuario
