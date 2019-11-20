@@ -7,6 +7,7 @@ namespace tind4s
     public partial class frmProvaCadastro : Form
     {
         DataTable dt = new DataTable("Materia");
+        public int IdProva;
         public frmProvaCadastro()
         {
             InitializeComponent();
@@ -72,12 +73,21 @@ namespace tind4s
 
         private void BtnInserirMateria_Click(object sender, EventArgs e)
         {
+            if(cbMateria.SelectedValue == dgvMateria.Rows (cbMateria.SelectedValue))
             InserirMateria();
         }
 
         private void BunifuThinButton21_Click(object sender, EventArgs e)
         {
+           
             GerarProva();
+            if (DialogResult.Yes == MessageBox.Show("Prova Gerada com Sucesso!\nGostaria de Imprimir a prova?", "Prova", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+            {
+                frmProva frmProva = new frmProva();
+
+                frmProva.ImprimirProva(IdProva);
+            }
+            
         }
 
         private void GerarProva()
@@ -87,7 +97,7 @@ namespace tind4s
                 Nm_Prova = txtProva.Text,
                 Id_Prontuario = 1
             };
-            int IdProva;
+            
             mObjProva.Inserir();
             mObjProva.maxId();
             IdProva = mObjProva.Id_Prova;

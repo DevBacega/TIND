@@ -13,7 +13,7 @@ namespace tind4s
 
         public void conectar()
         {
-            conexao.ConnectionString = "Server = ZEND-PC\\SQLEXPRESS; Database = tind4s; trusted_connection=true;";
+            conexao.ConnectionString = "Server = TID-VICTOR\\TIDSCI; Database = tind4s; trusted_connection=true;";
             conexao.Open();
         }
 

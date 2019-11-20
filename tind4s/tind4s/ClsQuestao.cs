@@ -97,10 +97,11 @@ namespace tind4s
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@pId", mId_Questao);
             SqlDataReader dr = cmd.ExecuteReader(CommandBehavior.SingleRow);
-            Id_Questao = Convert.ToInt32(dr["id_questao"]);
-            Ds_Pergunta = dr["ds_pergunta"].ToString();
-            Ds_Justificativa = dr["ds_justificativa"].ToString();
-            Id_Prontuario = Convert.ToInt32(dr["m.id_prontuario"]);
+            dr.Read();
+            Id_Questao = Convert.ToInt32(dr[0]);
+            Ds_Pergunta = dr[1].ToString();
+            Ds_Justificativa = dr[2].ToString();
+            Id_Prontuario = Convert.ToInt32(dr[3]);
             conexao.desconectar();
         }
 

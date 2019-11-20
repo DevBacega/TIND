@@ -35,10 +35,14 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>D:\TREMBOM\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="IronPdf, Version=2019.7.0.21100, Culture=neutral, PublicKeyToken=94e1c31412563c75, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPdf.2019.7.0\lib\net40\IronPdf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,6 +103,12 @@
     <Compile Include="frmQuestao.Designer.cs">
       <DependentUpon>frmQuestao.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTeste.Designer.cs">
+      <DependentUpon>frmTeste.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +144,9 @@
     <EmbeddedResource Include="frmQuestao.resx">
       <DependentUpon>frmQuestao.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTeste.resx">
+      <DependentUpon>frmTeste.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUsuario.resx">
       <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +163,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

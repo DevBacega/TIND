@@ -8,7 +8,7 @@ exec sp_Ins_Curso 'Processos Quimicos', 'PQ';
 
 exec sp_Ins_Materia 1,'Estrutura de Dados','ES';
 exec sp_Ins_Materia 1,'Redes','RD';
-exec sp_Ins_Materia 2,'Analise Quimica','AQ';
+exec sp_Ins_Materia 2,'Quimica Geral','QG';
 exec sp_Ins_Materia 2,'Quimica 1','Q1';
 
 
@@ -16,6 +16,9 @@ exec sp_Ins_Questao 'O que seria uma função recursiva?', 'Se chama recursiva poi
 exec sp_Ins_Questao 'Fale uma função recursiva famosa?', 'Fibonassi',1,3,1;
 exec sp_Ins_Questao 'O que é uma Rede WAN?', 'Pois seu significado é "World Area NetWork', 2,3,1;
 exec sp_Ins_Questao 'O que é HTTPS?', 'HTTPS - SECURITY', 2,3,1;
+
+exec sp_Ins_Questao 'O primeiro modelo científico para o átomo foi proposto por Dalton em 1808. Este modelo foi comparado a?','Por causa de seu formato',3,3,1;
+exec sp_Ins_Questao 'Qual elemento químico dos alistados abaixo possui propriedades semelhantes às do oxigênio (O)?','pois o oxigênio e o enxofre pertencem à mesma família na Tabela Periódica, que é a 16 (ou 6A), a família dos calcogênios.',3,3,1
 
 
 exec sp_Ins_Alternativas 'Uma função de uma chamada',0,1;
@@ -41,3 +44,15 @@ exec sp_Ins_Alternativas 'Homing Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hercu Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hinner Text Transfer Protocol Secure',0,4;
 exec sp_Ins_Alternativas 'Hiper Text Transfer Protocol Secure',0,4;
+
+exec sp_Ins_Alternativas 'Uma bola de tênis',0,5;
+exec sp_Ins_Alternativas 'Uma bola de futebol',0,5;
+exec sp_Ins_Alternativas 'Uma bola de pingue-pongue',0,5;
+exec sp_Ins_Alternativas 'Uma bola de bilhar',1,5;
+exec sp_Ins_Alternativas 'Uma bexiga cheia de ar.',0,5;
+
+exec sp_Ins_Alternativas 'Nitrogênio (N)',0,6
+exec sp_Ins_Alternativas 'Hidrogênio (H)',0,6
+exec sp_Ins_Alternativas 'Enxofre (S)',1,6 
+exec sp_Ins_Alternativas 'Flúor (F)',0,6 
+exec sp_Ins_Alternativas 'Carbono (C)',0,6

@@ -35,6 +35,7 @@
             this.dgvProva = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnNovo = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnImprimir = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProva)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,6 +142,34 @@
             this.btnDeletar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDeletar.Click += new System.EventHandler(this.BtnDeletar_Click);
             // 
+            // btnImprimir
+            // 
+            this.btnImprimir.ActiveBorderThickness = 1;
+            this.btnImprimir.ActiveCornerRadius = 20;
+            this.btnImprimir.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnImprimir.ActiveForecolor = System.Drawing.Color.White;
+            this.btnImprimir.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnImprimir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnImprimir.BackColor = System.Drawing.Color.White;
+            this.btnImprimir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnImprimir.BackgroundImage")));
+            this.btnImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnImprimir.ButtonText = "Imprimir";
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnImprimir.IdleBorderThickness = 1;
+            this.btnImprimir.IdleCornerRadius = 20;
+            this.btnImprimir.IdleFillColor = System.Drawing.Color.White;
+            this.btnImprimir.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnImprimir.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnImprimir.Location = new System.Drawing.Point(15, 394);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(5);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(110, 42);
+            this.btnImprimir.TabIndex = 78;
+            this.btnImprimir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
             // frmProva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -148,6 +177,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.dgvProva);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnDeletar);
@@ -164,5 +194,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnNovo;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDeletar;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvProva;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnImprimir;
     }
 }

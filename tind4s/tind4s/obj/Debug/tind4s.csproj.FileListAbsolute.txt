@@ -140,3 +140,24 @@ D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.exe
 D:\Zendriak\D-F\FACULDADE\4º SEMESTRE\TIND4S-V4\TIND4S\tind4s\tind4s\obj\Debug\tind4s.pdb
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\bin\Debug\tind4s.exe.config
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\bin\Debug\tind4s.exe
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\bin\Debug\tind4s.pdb
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\bin\Debug\IronPdf.dll
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\bin\Debug\IronPdf.xml
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.csprojAssemblyReference.cache
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmCurso.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmLogin.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmMateria.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmProva.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmProvaCadastro.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmTeste.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.csproj.GenerateResource.cache
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.csproj.CopyComplete
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.exe
+C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.pdb

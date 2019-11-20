@@ -123,7 +123,17 @@ namespace tind4s
 
         public override void Selecionar()
         {
-            
+            ClsConexao mObjconexao = new ClsConexao();
+
+            mObjconexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_SelectWr_Prova", mObjconexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId", mId_Prova);
+            SqlDataReader DR =  cmd.ExecuteReader(CommandBehavior.SingleRow);
+            DR.Read();
+            Nm_Prova = DR[1].ToString();
+            Id_Prontuario = Convert.ToInt32(DR[3]);
+            mObjconexao.desconectar();
         }
 
         public void SelecionaCursoMateria()
@@ -157,6 +167,20 @@ namespace tind4s
                 Id_Prova = 1;
             }
             conexao.desconectar();
+        }
+
+        public void ImprimiQuestaoProva()
+        {
+            ClsConexao mObjconexao = new ClsConexao();
+            mObjconexao.conectar();
+            SqlCommand cmd = new SqlCommand("sp_SelectWr_QsProva", mObjconexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pId", mId_Prova);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet DSU = new DataSet();
+            da.Fill(DSU);
+            DSProva = DSU;
+            mObjconexao.desconectar();
         }
 
         public void SelecionaQuestaoProva()
