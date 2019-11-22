@@ -26,12 +26,15 @@ namespace tind4s
             mObjProva.PreencheGrid();
             dgvProva.DataSource = mObjProva.DSProva;
             dgvProva.DataMember = mObjProva.DSProva.Tables[0].TableName;
+            dgvProva.Columns[0].Visible = false;
+            dgvProva.Columns[2].Visible = false;
             dgvProva.Refresh();
         }
         private void BtnNovo_Click(object sender, EventArgs e)
         {
             frmProvaCadastro frm = new frmProvaCadastro();
             frm.ShowDialog();
+            CarregaGrid();
         }
 
         private void BtnDeletar_Click(object sender, EventArgs e)

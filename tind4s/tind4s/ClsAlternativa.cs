@@ -41,7 +41,7 @@ namespace tind4s
         {
             ClsConexao conexao = new ClsConexao();
             conexao.conectar();
-            SqlCommand cmd = new SqlCommand("sp_Ins_Alternarivas", conexao.conexao);
+            SqlCommand cmd = new SqlCommand("sp_Ins_Alternativas", conexao.conexao);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@pDs_Alternativa",mDs_Alternativa);
             cmd.Parameters.AddWithValue("@pVerificacao",mSt_Verificacao);

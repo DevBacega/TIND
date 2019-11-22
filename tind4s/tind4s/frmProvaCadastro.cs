@@ -73,7 +73,7 @@ namespace tind4s
 
         private void BtnInserirMateria_Click(object sender, EventArgs e)
         {
-            if(cbMateria.SelectedValue == dgvMateria.Rows (cbMateria.SelectedValue))
+            //if(cbMateria.SelectedValue == dgvMateria.Rows (cbMateria.SelectedValue))
             InserirMateria();
         }
 

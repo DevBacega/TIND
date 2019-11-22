@@ -19,8 +19,8 @@ namespace tind4s
             gridCurso.AllowUserToAddRows = false;
             gridCurso.AllowUserToDeleteRows = false;
             gridCurso.ReadOnly = true;
-            lblId_Curso.Visible = false;
             lblResultado.Visible = false;
+            lblIdCurso.Visible = false;
         }
         int aux = 1;
 
@@ -72,9 +72,17 @@ namespace tind4s
             }
             else if (aux == 2)
             {
-                mObjCurso.Atualizar();
-                lblResultado.Text = "Curso Atualuzado com Sucesso!";
-                CarregaGrid();
+                try
+                {
+                    mObjCurso.Atualizar();
+                    lblResultado.Text = "Curso Atualuzado com Sucesso!";
+                    CarregaGrid();
+                }
+                catch
+                {
+                    MessageBox.Show("Errou Ao atualizar!");
+                }
+                
             }
             limpar();
         }
@@ -114,9 +122,23 @@ namespace tind4s
             txtAbrev.Refresh();
         }
 
-        private void Redimensionar(object sender, EventArgs e)
+        /*private void Redimensionar(object sender, EventArgs e)
         {
             this.Size = this.Parent.Size;
+        }*/
+
+        private void SelecionarCurso(object sender, DataGridViewCellEventArgs e)
+        {
+            aux = 2;
+            lblIdCurso.Text = gridCurso.CurrentRow.Cells[0].Value.ToString();
+            txtCurso.Text = gridCurso.CurrentRow.Cells[1].Value.ToString();
+            txtAbrev.Text = gridCurso.CurrentRow.Cells[2].Value.ToString();
+            
+        }
+
+        private void FrmCurso_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
