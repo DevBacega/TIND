@@ -144,6 +144,7 @@
             this.txtQtd.Size = new System.Drawing.Size(53, 29);
             this.txtQtd.TabIndex = 88;
             this.txtQtd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtQtd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numerico);
             // 
             // lblQuestao
             // 
@@ -275,8 +276,8 @@
             this.btnSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnSair.IdleBorderThickness = 1;
             this.btnSair.IdleCornerRadius = 20;
-            this.btnSair.IdleFillColor = System.Drawing.Color.White;
-            this.btnSair.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.btnSair.IdleForecolor = System.Drawing.Color.White;
             this.btnSair.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             this.btnSair.Location = new System.Drawing.Point(424, 236);
             this.btnSair.Margin = new System.Windows.Forms.Padding(5);

@@ -47,85 +47,83 @@ namespace tind4s
         {
             ClsMateria mObjMateria = new ClsMateria();
             mObjMateria.PreencheGrid();
-            gridMateria.DataSource = mObjMateria.DSMateria;
-            gridMateria.DataMember = mObjMateria.DSMateria.Tables[0].TableName;
-            gridMateria.Columns[0].Visible = false;
-            gridMateria.Columns[3].Visible = false;
+            dgvMateria.DataSource = mObjMateria.DSMateria;
+            dgvMateria.DataMember = mObjMateria.DSMateria.Tables[0].TableName;
+            dgvMateria.Columns[0].Visible = false;
+            dgvMateria.Columns[3].Visible = false;
 
         }
 
         private void SelecionaMateria(object sender, DataGridViewCellEventArgs e)
         {
             aux = 2;
-            lblIdMateria.Text = gridMateria.CurrentRow.Cells[0].Value.ToString();
-            txtSigla.Text = gridMateria.CurrentRow.Cells[1].Value.ToString();
-            txtMateria.Text = gridMateria.CurrentRow.Cells[2].Value.ToString();
+            lblIdMateria.Text = dgvMateria.CurrentRow.Cells[0].Value.ToString();
+            txtSigla.Text = dgvMateria.CurrentRow.Cells[1].Value.ToString();
+            txtMateria.Text = dgvMateria.CurrentRow.Cells[2].Value.ToString();
         }
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            ClsMateria mObjMateria = new ClsMateria
-            {
-                Id_Materia = Convert.ToInt32(0 + lblIdMateria.Text),
-                Nm_Materia = txtMateria.Text,
-                Sg_Materia = txtSigla.Text,
-                Id_Curso = Convert.ToInt32(cbCurso.SelectedValue)
-            };
+            if(Validador())
+            { 
+                ClsMateria mObjMateria = new ClsMateria
+                {
+                    Id_Materia = Convert.ToInt32(0 + lblIdMateria.Text),
+                    Nm_Materia = txtMateria.Text,
+                    Sg_Materia = txtSigla.Text,
+                    Id_Curso = Convert.ToInt32(cbCurso.SelectedValue)
+                };
 
-            if (aux == 1)
-            {
-                try
+                if (aux == 1)
                 {
-                    mObjMateria.Inserir();
-                    lblResultado.Text = "Cadastro feito com Sucesso";
-                    CarregaGrid();
+                    try
+                    {
+                        mObjMateria.Inserir();
+                        lblResultado.Text = "Cadastro feito com Sucesso";
+                        CarregaGrid();
+                    }
+                    catch (Exception ex)
+                    {
+                        lblResultado.Text = "Erro ao cadastrar";
+                        MessageBox.Show("Erro: " + ex.ToString());
+                    }
                 }
-                catch (Exception ex)
+                else if (aux == 2)
                 {
-                    lblResultado.Text = "Erro ao cadastrar";
-                    MessageBox.Show("Erro: " + ex.ToString());
+                    try
+                    {
+                        mObjMateria.Atualizar();
+                        lblResultado.Text = "Materia Atualizada";
+                        CarregaGrid();
+                    }
+                    catch (Exception ex)
+                    {
+                        lblResultado.Text = "Erro ao Atualizar";
+                        MessageBox.Show("Erro: " + ex.ToString());
+                    }
                 }
+                Limpar();
+                CarregaGrid();
             }
-            else if (aux == 2)
+            else
             {
-                try
-                {
-                    mObjMateria.Atualizar();
-                    lblResultado.Text = "Materia Atualizada";
-                    CarregaGrid();
-                }
-                catch (Exception ex)
-                {
-                    lblResultado.Text = "Erro ao Atualizar";
-                    MessageBox.Show("Erro: " + ex.ToString());
-                }
+                MessageBox.Show("Campos Vazios!\nPreencha todos os campos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            Limpar();
+            
         }
 
         private void BtnDeletar_Click(object sender, EventArgs e)
         {
-            //ClsProfessor mObjprofessor = new ClsProfessor()
-            //{
-            //    Id_Prontuario = Convert.ToInt32(lblId_Prontuario.Text)
-            //};
-            //DialogResult resultado = MessageBox.Show("Você tem certeza que deseja desativar esse Usuario?", "Atenção", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
-            //if (resultado == DialogResult.Yes)
-            //{
-            //    try
-            //    {
-            //        mObjprofessor.Desativa();
-            //        lblResultado.Text = "Usuário Inativo com Sucesso";
-            //        CarregaGrid();
-            //        limpar();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        MessageBox.Show("Erro: " + ex.ToString());
-            //        CarregaGrid();
-
-            //    }
-            //}
+            if (DialogResult.Yes == MessageBox.Show("Quer mesmo Excluir essa Materia?\nProcesso nao reversivel!", "Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                ClsMateria mObjMateria = new ClsMateria
+                {
+                    Id_Curso = Convert.ToInt32(dgvMateria.CurrentRow.Cells[0].Value)
+                };
+                mObjMateria.Desativa();
+                CarregaGrid();
+            }
+            Limpar();
         }
 
         private void BtnNovo_Click(object sender, EventArgs e)
@@ -136,6 +134,11 @@ namespace tind4s
         private void Redimensionar(object sender, EventArgs e)
         {
             this.Size = this.Parent.Size;
+        }
+
+        private bool Validador()
+        {
+            return (String.IsNullOrWhiteSpace(txtMateria.Text) || String.IsNullOrWhiteSpace(txtSigla.Text) ? false : true);
         }
     }
 }

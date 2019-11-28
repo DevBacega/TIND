@@ -153,7 +153,6 @@ C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmMenu.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmProva.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmProvaCadastro.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmQuestao.resources
-C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmTeste.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmUsuario.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.frmViewQuestao.resources
 C:\Victor\FACU\GITHUB\TIND\tind4s\tind4s\obj\Debug\tind4s.Properties.Resources.resources

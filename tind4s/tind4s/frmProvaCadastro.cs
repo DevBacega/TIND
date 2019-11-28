@@ -57,7 +57,6 @@ namespace tind4s
         private void CriarGrid()
         {
             dt.Columns.Add("Id");
-
             dt.Columns.Add("Sigla");
             dt.Columns.Add("Qtd");
             dgvMateria.DataSource = dt;
@@ -73,49 +72,75 @@ namespace tind4s
 
         private void BtnInserirMateria_Click(object sender, EventArgs e)
         {
-            //if(cbMateria.SelectedValue == dgvMateria.Rows (cbMateria.SelectedValue))
-            InserirMateria();
+           if(ValidadorGrid())
+            { 
+              InserirMateria();
+            }
+           else
+            {
+                MessageBox.Show("Materia ja inserida!\nSelecione outra materia ou exclua da lista.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void BunifuThinButton21_Click(object sender, EventArgs e)
         {
-           
-            GerarProva();
-            if (DialogResult.Yes == MessageBox.Show("Prova Gerada com Sucesso!\nGostaria de Imprimir a prova?", "Prova", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
-            {
-                frmProva frmProva = new frmProva();
-
-                frmProva.ImprimirProva(IdProva);
+            if(Validador())
+            { 
+                if(GerarProva())
+                { 
+                    if (DialogResult.Yes == MessageBox.Show("Prova Gerada com Sucesso!\nGostaria de Imprimir a prova?", "Prova", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
+                    {
+                        frmProva frmProva = new frmProva();
+                        frmProva.ImprimirProva(IdProva);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao Gerar a Prova!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            
+            else
+            {
+                MessageBox.Show("Campos Vazios, checar se contem Questoes no Formulario.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
-        private void GerarProva()
+        private bool GerarProva()
         {
             ClsProva mObjProva = new ClsProva()
             {
                 Nm_Prova = txtProva.Text,
                 Id_Prontuario = 1
             };
-            
-            mObjProva.Inserir();
-            mObjProva.maxId();
-            IdProva = mObjProva.Id_Prova;
 
-            foreach(DataGridViewRow ROW in dgvMateria.Rows)
-            {
-                mObjProva.Qtd = Convert.ToInt32(ROW.Cells[2].Value);
-                mObjProva.Id_Materia = Convert.ToInt32(ROW.Cells[0].Value);
-                mObjProva.SelecionaQuestaoProva();
-                DataSet TbTemp = mObjProva.DSProva;
+            try { 
+                mObjProva.Inserir();
+                mObjProva.maxId();
+                IdProva = mObjProva.Id_Prova;
 
-                foreach(DataRow Line in TbTemp.Tables[0].Rows )
+                foreach(DataGridViewRow ROW in dgvMateria.Rows)
                 {
-                    mObjProva.Id_Questao = Convert.ToInt32(Line[0]);
-                    mObjProva.Id_Prova = IdProva;
-                    mObjProva.InserirQuestaoProva();
+                    mObjProva.Qtd = Convert.ToInt32(ROW.Cells[2].Value);
+                    mObjProva.Id_Materia = Convert.ToInt32(ROW.Cells[0].Value);
+                    mObjProva.SelecionaQuestaoProva();
+                    DataSet TbTemp = mObjProva.DSProva;
+
+                    foreach(DataRow Line in TbTemp.Tables[0].Rows )
+                    {
+                        mObjProva.Id_Questao = Convert.ToInt32(Line[0]);
+                        mObjProva.Id_Prova = IdProva;
+                        mObjProva.InserirQuestaoProva();
+                    }
                 }
+                return true;
             }
+            catch
+            {
+                mObjProva.Desativa();
+                return false;
+            }
+            
         }
 
         private void BtnExcluirMateria_Click(object sender, EventArgs e)
@@ -129,6 +154,29 @@ namespace tind4s
         {
             this.Dispose();
             this.Close();
+        }
+
+        private bool Validador()
+        {
+          return (String.IsNullOrWhiteSpace(txtProva.Text) || dgvMateria.Rows.Count <= 0) ?  false :  true;
+        }
+
+        private void Numerico(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(Char.IsNumber(e.KeyChar) && txtQtd.Text.Length < 2);
+        }
+
+        public bool ValidadorGrid()
+        {
+            bool status = true;
+            foreach(DataGridViewRow Linha in dgvMateria.Rows)
+            {
+                if(Convert.ToInt32(cbMateria.SelectedValue) == Convert.ToInt32(Linha.Cells[0].Value))
+                {
+                    status = false;
+                }
+            }
+            return status;
         }
     }
 }

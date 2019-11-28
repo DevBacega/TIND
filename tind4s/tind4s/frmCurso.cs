@@ -16,15 +16,15 @@ namespace tind4s
         {
             InitializeComponent();
             CarregaGrid();
-            gridCurso.AllowUserToAddRows = false;
-            gridCurso.AllowUserToDeleteRows = false;
-            gridCurso.ReadOnly = true;
+            dgvCurso.AllowUserToAddRows = false;
+            dgvCurso.AllowUserToDeleteRows = false;
+            dgvCurso.ReadOnly = true;
             lblResultado.Visible = false;
             lblIdCurso.Visible = false;
         }
         int aux = 1;
 
-        public void limpar()
+        public void Limpar()
         {
             txtCurso.Text = string.Empty;
             txtAbrev.Text = string.Empty;
@@ -35,56 +35,63 @@ namespace tind4s
         {
             ClsCurso mObjCurso = new ClsCurso();
             mObjCurso.PreencheGrid();
-            gridCurso.DataSource = mObjCurso.DsCurso;
-            gridCurso.DataMember = mObjCurso.DsCurso.Tables[0].TableName;
-            gridCurso.Columns[0].Visible = false;
-            gridCurso.Refresh();
+            dgvCurso.DataSource = mObjCurso.DsCurso;
+            dgvCurso.DataMember = mObjCurso.DsCurso.Tables[0].TableName;
+            dgvCurso.Columns[0].Visible = false;
+            dgvCurso.Refresh();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
             aux = 1;
-            limpar();
+            Limpar();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            ClsCurso mObjCurso = new ClsCurso()
-            {
-                Id_Curso = Convert.ToInt32(0 + lblId_Curso.Text),
-                Nm_Curso = txtCurso.Text,
-                Abrev_Nm_Curso = txtAbrev.Text
-            };
+            if(Validador())
+            { 
+                ClsCurso mObjCurso = new ClsCurso()
+                {
+                    Id_Curso = Convert.ToInt32(0 + lblId_Curso.Text),
+                    Nm_Curso = txtCurso.Text,
+                    Abrev_Nm_Curso = txtAbrev.Text
+                };
 
-            if (aux == 1)
-            {
-                try
+                if (aux == 1)
                 {
-                    mObjCurso.Inserir();
-                    lblResultado.Text = "Curso Inserido com Sucesso!";
-                    CarregaGrid();
+                    try
+                    {
+                        mObjCurso.Inserir();
+                        lblResultado.Text = "Curso Inserido com Sucesso!";
+                        CarregaGrid();
+                    }
+                    catch(Exception ex)
+                    {
+                        lblResultado.Text = "Erro ao Inserir Curso";
+                        MessageBox.Show("Erro: " + ex.ToString());
+                    }
                 }
-                catch(Exception ex)
+                else if (aux == 2)
                 {
-                    lblResultado.Text = "Erro ao Inserir Curso";
-                    MessageBox.Show("Erro: " + ex.ToString());
-                }
-            }
-            else if (aux == 2)
-            {
-                try
-                {
-                    mObjCurso.Atualizar();
-                    lblResultado.Text = "Curso Atualuzado com Sucesso!";
-                    CarregaGrid();
-                }
-                catch
-                {
-                    MessageBox.Show("Errou Ao atualizar!");
-                }
+                    try
+                    {
+                        mObjCurso.Atualizar();
+                        lblResultado.Text = "Curso Atualuzado com Sucesso!";
+                        CarregaGrid();
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Errou Ao atualizar!");
+                    }
                 
+                }
+                Limpar();
             }
-            limpar();
+            else
+            {
+                MessageBox.Show("Campos Vazios!\nPreencha todos os campos!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -101,7 +108,7 @@ namespace tind4s
                     mObjCurso.Desativa();
                     lblResultado.Text = "Usuário Inativo com Sucesso";
                     CarregaGrid();
-                    limpar();
+                    Limpar();
                 }
                 catch (Exception ex)
                 {
@@ -115,30 +122,39 @@ namespace tind4s
         private void gridCurso_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             aux = 2;
-            lblId_Curso.Text = gridCurso.CurrentRow.Cells[0].Value.ToString();
-            txtCurso.Text = gridCurso.CurrentRow.Cells[1].Value.ToString();
+            lblId_Curso.Text = dgvCurso.CurrentRow.Cells[0].Value.ToString();
+            txtCurso.Text = dgvCurso.CurrentRow.Cells[1].Value.ToString();
             txtCurso.Refresh();
-            txtAbrev.Text = gridCurso.CurrentRow.Cells[2].Value.ToString();
+            txtAbrev.Text = dgvCurso.CurrentRow.Cells[2].Value.ToString();
             txtAbrev.Refresh();
         }
-
-        /*private void Redimensionar(object sender, EventArgs e)
-        {
-            this.Size = this.Parent.Size;
-        }*/
 
         private void SelecionarCurso(object sender, DataGridViewCellEventArgs e)
         {
             aux = 2;
-            lblIdCurso.Text = gridCurso.CurrentRow.Cells[0].Value.ToString();
-            txtCurso.Text = gridCurso.CurrentRow.Cells[1].Value.ToString();
-            txtAbrev.Text = gridCurso.CurrentRow.Cells[2].Value.ToString();
-            
+            lblIdCurso.Text = dgvCurso.CurrentRow.Cells[0].Value.ToString();
+            txtCurso.Text = dgvCurso.CurrentRow.Cells[1].Value.ToString();
+            txtAbrev.Text = dgvCurso.CurrentRow.Cells[2].Value.ToString();
         }
 
-        private void FrmCurso_Load(object sender, EventArgs e)
+        private bool Validador()
         {
+            return (String.IsNullOrWhiteSpace(txtAbrev.Text) || String.IsNullOrWhiteSpace(txtCurso.Text) ? false : true);
+        }
 
+        private void btnDeletar_Click_1(object sender, EventArgs e)
+        {
+            
+            if (DialogResult.Yes == MessageBox.Show("Quer mesmo Excluir esse Curso?\nProcesso nao reversivel!","Atenção!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning))
+            {
+                ClsCurso mObjCurso = new ClsCurso
+                {
+                    Id_Curso = Convert.ToInt32(dgvCurso.CurrentRow.Cells[0].Value)
+                };
+                mObjCurso.Desativa();
+                CarregaGrid();
+            }
+            Limpar();
         }
     }
 }

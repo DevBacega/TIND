@@ -32,7 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMateria));
-            this.gridMateria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvMateria = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.lblResultado = new System.Windows.Forms.Label();
             this.txtSigla = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtMateria = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -44,20 +44,20 @@
             this.btnDeletar = new Bunifu.Framework.UI.BunifuThinButton2();
             this.lblIdMateria = new System.Windows.Forms.Label();
             this.cbCurso = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.gridMateria)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).BeginInit();
             this.SuspendLayout();
             // 
-            // gridMateria
+            // dgvMateria
             // 
-            this.gridMateria.AllowUserToAddRows = false;
-            this.gridMateria.AllowUserToDeleteRows = false;
+            this.dgvMateria.AllowUserToAddRows = false;
+            this.dgvMateria.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gridMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridMateria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridMateria.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.gridMateria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridMateria.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridMateria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvMateria.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMateria.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMateria.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvMateria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMateria.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvMateria.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,8 +65,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridMateria.ColumnHeadersHeight = 40;
+            this.dgvMateria.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMateria.ColumnHeadersHeight = 40;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -74,25 +74,25 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(226)))), ((int)(((byte)(244)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMateria.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gridMateria.DoubleBuffered = true;
-            this.gridMateria.EnableHeadersVisualStyles = false;
-            this.gridMateria.GridColor = System.Drawing.Color.White;
-            this.gridMateria.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
-            this.gridMateria.HeaderForeColor = System.Drawing.Color.White;
-            this.gridMateria.Location = new System.Drawing.Point(11, 11);
-            this.gridMateria.Margin = new System.Windows.Forms.Padding(2);
-            this.gridMateria.Name = "gridMateria";
-            this.gridMateria.ReadOnly = true;
-            this.gridMateria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.gridMateria.RowHeadersVisible = false;
-            this.gridMateria.RowTemplate.DividerHeight = 1;
-            this.gridMateria.RowTemplate.Height = 30;
-            this.gridMateria.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridMateria.Size = new System.Drawing.Size(775, 197);
-            this.gridMateria.TabIndex = 76;
-            this.gridMateria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelecionaMateria);
+            this.dgvMateria.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMateria.DoubleBuffered = true;
+            this.dgvMateria.EnableHeadersVisualStyles = false;
+            this.dgvMateria.GridColor = System.Drawing.Color.White;
+            this.dgvMateria.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(74)))), ((int)(((byte)(123)))));
+            this.dgvMateria.HeaderForeColor = System.Drawing.Color.White;
+            this.dgvMateria.Location = new System.Drawing.Point(11, 11);
+            this.dgvMateria.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvMateria.Name = "dgvMateria";
+            this.dgvMateria.ReadOnly = true;
+            this.dgvMateria.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvMateria.RowHeadersVisible = false;
+            this.dgvMateria.RowTemplate.DividerHeight = 1;
+            this.dgvMateria.RowTemplate.Height = 30;
+            this.dgvMateria.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMateria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMateria.Size = new System.Drawing.Size(775, 197);
+            this.dgvMateria.TabIndex = 76;
+            this.dgvMateria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SelecionaMateria);
             // 
             // lblResultado
             // 
@@ -283,7 +283,7 @@
             this.ClientSize = new System.Drawing.Size(800, 311);
             this.Controls.Add(this.cbCurso);
             this.Controls.Add(this.lblIdMateria);
-            this.Controls.Add(this.gridMateria);
+            this.Controls.Add(this.dgvMateria);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
@@ -299,7 +299,7 @@
             this.Text = "frmMateria";
             this.Load += new System.EventHandler(this.FrmMateria_Load);
             this.Resize += new System.EventHandler(this.Redimensionar);
-            ((System.ComponentModel.ISupportInitialize)(this.gridMateria)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +307,7 @@
 
         #endregion
 
-        private Bunifu.Framework.UI.BunifuCustomDataGrid gridMateria;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvMateria;
         private System.Windows.Forms.Label lblResultado;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSalvar;
         private Bunifu.Framework.UI.BunifuThinButton2 btnNovo;

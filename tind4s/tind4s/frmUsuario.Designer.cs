@@ -43,14 +43,11 @@
             this.lblProfessor = new System.Windows.Forms.Label();
             this.lblProntuario = new System.Windows.Forms.Label();
             this.tBUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
-           // this.tind4sDataSet1 = new tind4s.tind4sDataSet1();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblId_Prontuario = new System.Windows.Forms.Label();
             this.lblInativo = new System.Windows.Forms.Label();
-           // this.tB_UsuarioTableAdapter = new tind4s.tind4sDataSet1TableAdapters.TB_UsuarioTableAdapter();
             this.gridUsuario = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             ((System.ComponentModel.ISupportInitialize)(this.tBUsuarioBindingSource)).BeginInit();
-           // ((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -165,12 +162,13 @@
             this.txtProfessor.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtProfessor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtProfessor.isPassword = false;
-            this.txtProfessor.Location = new System.Drawing.Point(462, 296);
+            this.txtProfessor.Location = new System.Drawing.Point(127, 302);
             this.txtProfessor.Margin = new System.Windows.Forms.Padding(4);
             this.txtProfessor.Name = "txtProfessor";
-            this.txtProfessor.Size = new System.Drawing.Size(207, 29);
+            this.txtProfessor.Size = new System.Drawing.Size(222, 29);
             this.txtProfessor.TabIndex = 35;
             this.txtProfessor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtProfessor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProfessor_KeyPress);
             // 
             // txtUsuario
             // 
@@ -182,12 +180,13 @@
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtUsuario.isPassword = false;
-            this.txtUsuario.Location = new System.Drawing.Point(127, 296);
+            this.txtUsuario.Location = new System.Drawing.Point(476, 303);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(222, 28);
+            this.txtUsuario.Size = new System.Drawing.Size(136, 28);
             this.txtUsuario.TabIndex = 34;
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numerico);
             // 
             // lblSenha
             // 
@@ -205,7 +204,7 @@
             this.lblProfessor.AutoSize = true;
             this.lblProfessor.BackColor = System.Drawing.Color.Transparent;
             this.lblProfessor.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfessor.Location = new System.Drawing.Point(354, 299);
+            this.lblProfessor.Location = new System.Drawing.Point(19, 305);
             this.lblProfessor.Name = "lblProfessor";
             this.lblProfessor.Size = new System.Drawing.Size(99, 22);
             this.lblProfessor.TabIndex = 32;
@@ -216,7 +215,7 @@
             this.lblProntuario.AutoSize = true;
             this.lblProntuario.BackColor = System.Drawing.Color.Transparent;
             this.lblProntuario.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProntuario.Location = new System.Drawing.Point(17, 299);
+            this.lblProntuario.Location = new System.Drawing.Point(366, 306);
             this.lblProntuario.Name = "lblProntuario";
             this.lblProntuario.Size = new System.Drawing.Size(101, 22);
             this.lblProntuario.TabIndex = 33;
@@ -225,12 +224,6 @@
             // tBUsuarioBindingSource
             // 
             this.tBUsuarioBindingSource.DataMember = "TB_Usuario";
-            //this.tBUsuarioBindingSource.DataSource = this.tind4sDataSet1;
-            // 
-            // tind4sDataSet1
-            // 
-           // this.tind4sDataSet1.DataSetName = "tind4sDataSet1";
-           // this.tind4sDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lblResultado
             // 
@@ -257,10 +250,6 @@
             this.lblInativo.Size = new System.Drawing.Size(35, 13);
             this.lblInativo.TabIndex = 45;
             this.lblInativo.Text = "label1";
-            // 
-            // tB_UsuarioTableAdapter
-            // 
-           // this.tB_UsuarioTableAdapter.ClearBeforeFill = true;
             // 
             // gridUsuario
             // 
@@ -307,7 +296,6 @@
             this.gridUsuario.Size = new System.Drawing.Size(782, 278);
             this.gridUsuario.TabIndex = 63;
             this.gridUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.gridUsuario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridUsuario_CellContentClick);
             // 
             // frmUsuario
             // 
@@ -336,7 +324,6 @@
             this.Load += new System.EventHandler(this.frmUsuario_Load);
             this.Resize += new System.EventHandler(this.Redimensionar);
             ((System.ComponentModel.ISupportInitialize)(this.tBUsuarioBindingSource)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.tind4sDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridUsuario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

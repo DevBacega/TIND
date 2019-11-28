@@ -183,6 +183,20 @@ namespace tind4s
             mObjconexao.desconectar();
         }
 
+        public void ImprimiGabarito()
+        {
+            ClsConexao mObjconexao = new ClsConexao();
+            mObjconexao.conectar();
+            SqlCommand cmd = new SqlCommand("Sp_Gabarito", mObjconexao.conexao);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@pIdProva", mId_Prova);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet DSU = new DataSet();
+            da.Fill(DSU);
+            DSProva = DSU;
+            mObjconexao.desconectar();
+        }
+
         public void SelecionaQuestaoProva()
         {
             ClsConexao mObjconexao = new ClsConexao();
@@ -209,5 +223,7 @@ namespace tind4s
             cmd.ExecuteReader(CommandBehavior.SingleRow);
             mObjconexao.desconectar();
         }
+
+        
     }
 }

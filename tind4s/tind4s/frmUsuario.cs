@@ -24,31 +24,13 @@ namespace tind4s
         }
         int aux = 1;
 
-
-
-
-        //private void loadGrid()
-        //{
-        //    ClsProfessor mObjprofessor = new ClsProfessor();
-        //    mObjprofessor.PreencheGrid();
-        //    gridUsuario.DataSource = mObjprofessor.DSUsuario.Tables[0];
-        //    gridUsuario.ReadOnly = true;
-        //        //gridUsuario.Columns[0].HeaderText = "Prontuario";
-        //        //gridUsuario.Columns[1].HeaderText = "Nome";
-
-        //        gridUsuario.AutoResizeColumns();
-
-        //        gridUsuario.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-        //}
-
         public void limpar()
         {
             txtProfessor.Text = string.Empty;
             txtSenha.Text = string.Empty;
             txtUsuario.Text = string.Empty;
+            lblId_Prontuario.Text = string.Empty;
         }
-
 
         private void frmUsuario_Load(object sender, EventArgs e)
         {
@@ -63,44 +45,51 @@ namespace tind4s
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            ClsProfessor mObjProfessor = new ClsProfessor()
+            if (Validador())
             {
-                Nm_Usuario = txtProfessor.Text,
-                Ds_Senha = txtSenha.Text,
-                Ds_Usuario = txtUsuario.Text,
-                Id_Prontuario = Convert.ToInt32(0 + lblId_Prontuario.Text),
-                St_Usuario = 1
-            };
+                ClsProfessor mObjProfessor = new ClsProfessor()
+                {
+                    Nm_Usuario = txtProfessor.Text,
+                    Ds_Senha = txtSenha.Text,
+                    Ds_Usuario = txtUsuario.Text,
+                    Id_Prontuario = Convert.ToInt32(0 + lblId_Prontuario.Text),
+                    St_Usuario = 1
+                };
 
-            if (aux == 1)
-            {
-                try
+                if (aux == 1)
                 {
-                    mObjProfessor.Inserir();
-                    lblResultado.Text = "Cadastro feito com Sucesso";
-                    CarregaGrid();
+                    try
+                    {
+                        mObjProfessor.Inserir();
+                        lblResultado.Text = "Cadastro feito com Sucesso";
+                        CarregaGrid();
+                    }
+                    catch (Exception ex)
+                    {
+                        lblResultado.Text = "Erro ao cadastrar";
+                        MessageBox.Show("Erro: " + ex.ToString());
+                    }
                 }
-                catch (Exception ex)
+                else if (aux == 2)
                 {
-                    lblResultado.Text = "Erro ao cadastrar";
-                    MessageBox.Show("Erro: " + ex.ToString() );
+                    try
+                    {
+                        mObjProfessor.Atualizar();
+                        lblResultado.Text = "Usuario Atualizado";
+                        CarregaGrid();
+                    }
+                    catch (Exception ex)
+                    {
+                        lblResultado.Text = "Erro ao Atualizar";
+                        MessageBox.Show("Erro: " + ex.ToString());
+                    }
                 }
+                lblId_Prontuario.Text = string.Empty;
             }
-            else if (aux == 2)
+            else
             {
-                try
-                {
-                    mObjProfessor.Atualizar();
-                    lblResultado.Text = "Usuario Atualizado";
-                    CarregaGrid();
-                }
-                catch (Exception ex)
-                {
-                    lblResultado.Text = "Erro ao Atualizar";
-                    MessageBox.Show("Erro: " + ex.ToString());
-                }
+                MessageBox.Show("Campos vazios!\nPor favor cheque todos os campos.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            lblId_Prontuario.Text = string.Empty;
         }
 
         private void btnDeletar_Click(object sender, EventArgs e)
@@ -155,15 +144,24 @@ namespace tind4s
             gridUsuario.DataMember = mObjProfessor.DSUsuario.Tables[0].TableName;
             gridUsuario.Refresh();
         }
-
-        private void GridUsuario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Redimensionar(object sender, EventArgs e)
         {
             this.Size = this.Parent.Size;
+        }
+
+        private void Numerico(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(Char.IsNumber(e.KeyChar));
+        }
+
+        private void txtProfessor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = (Char.IsNumber(e.KeyChar));
+        }
+
+        private bool Validador()
+        {
+            return (String.IsNullOrEmpty(txtProfessor.Text) || String.IsNullOrEmpty(txtSenha.Text) || String.IsNullOrEmpty(txtUsuario.Text)) ? false : true;
         }
     }
 }
