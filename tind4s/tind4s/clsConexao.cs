@@ -13,7 +13,8 @@ namespace tind4s
 
         public void conectar()
         {
-            conexao.ConnectionString = "Server = TID-VICTOR\\TIDSCI; Database = tind4s; trusted_connection=true;";
+            //conexao.ConnectionString = "Server = TID-VICTOR\\TIDSCI; Database = tind4s; trusted_connection=true;";
+            conexao.ConnectionString = "Server=tcp:tind-ifsp.database.windows.net,1433;Initial Catalog=TIND;Persist Security Info=False;User ID=Zendriak;Password=Z2y5rw3g!@;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             conexao.Open();
         }
 
